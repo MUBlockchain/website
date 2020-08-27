@@ -1,0 +1,88 @@
+/* Leadership Team */
+
+#leadership-team__header {
+    text-align: center;
+    font-size: 40px;
+    color: #C8352A;
+    font-family: 'Fjalla One', arial, sans-serif;
+}
+
+/* Leadership Card */
+
+.leadership-card__row {
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.leadership-card__column {
+    text-align: center;
+    width: 350px;
+}
+
+.leadership-card__column > img {
+    border-radius: 50%;
+    width: 223px;
+    height: 223px;
+}
+
+.leadership-card__column > p {
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+}
+
+.leadership-card__column > p:nth-child(2) {
+    font-size: 22px;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+}
+
+.leadership-card__column > p:nth-child(3) {
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    opacity: 80%;
+}
+
+.leadership-card__column > p:nth-child(4) {
+    color: rgb(94, 94, 94);
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-size: 16px;
+}
+
+.leadership-card__column > a {
+    color: rgb(199, 0, 0);
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.leadership-card__column > a:last-child {
+    text-transform: uppercase;
+    background: #c70000;
+    color: white;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    display: block;
+    margin-top: 30px;
+    width: 30%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding: 12px 30px;
+}
+
+@media (max-width: 450px) {
+    .leadership-card__column {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .leadership-card__column > img {
+        width: 200px;
+        height: 200px;
+    }
+}
