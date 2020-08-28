@@ -1,4 +1,27 @@
+/* MUBC Header */
+#mubc-header {
+    height: 150px;
+    background-color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#mubc-header > h1 {
+    font-size: 28px;
+    font-family: "Fjalla One", arial, sans-serif;
+    color: rgb(200, 53, 42);
+}
+
+
 /* Leadership Team */
+
+.leadership-team__divider{
+    width: 50px;
+    height: 2.5px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #leadership-team__header {
     text-align: center;
@@ -7,9 +30,15 @@
     font-family: 'Fjalla One', arial, sans-serif;
 }
 
-/* Leadership Card */
+#leadership-team__strategic-advisors__header {
+    padding-top: 45px;
+    text-align: center;
+    font-size: 40px;
+    color: #C8352A;
+    font-family: 'Fjalla One', arial, sans-serif;
+}
 
-.leadership-card__row {
+.leadership-team__row {
     text-align: center;
     display: flex;
     margin-left: auto;
@@ -17,72 +46,132 @@
     position: relative;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
-.leadership-card__column {
+.leadership-team__row:nth-child(odd) {
+   background-color: #F6F6F6;
+}
+
+.leadership-team__strategic-advisors {
+    background-color: #F6F6F6;
+}
+
+.leadership-team__column {
     text-align: center;
-    width: 350px;
+    position: relative;
+    width: 400px;
+    height: 950px;
 }
 
-.leadership-card__column > img {
+.leadership-team__strategic-advisors__column {
+    text-align: center;
+    position: relative;
+    width: 400px;
+    height: 1225px;
+}
+
+.leadership-team__column > img, .leadership-team__strategic-advisors__column > img{
     border-radius: 50%;
     width: 223px;
     height: 223px;
 }
 
-.leadership-card__column > p {
+.leadership-team__column > p, .leadership-team__strategic-advisors__column > p{
     margin-right: auto;
     margin-left: auto;
     width: 85%;
 }
 
-.leadership-card__column > p:nth-child(2) {
+.leadership-team__column > p:nth-child(2), .leadership-team__strategic-advisors__column > p:nth-child(2) {
     font-size: 22px;
     font-family: 'Source Sans Pro', arial, sans-serif;
 }
 
-.leadership-card__column > p:nth-child(3) {
+.leadership-team__column > p:nth-child(3), .leadership-team__strategic-advisors__column > p:nth-child(3) {
     font-family: 'Source Sans Pro', arial, sans-serif;
     font-weight: 700;
     font-style: italic;
+    font-size: 16px;
     opacity: 80%;
 }
 
-.leadership-card__column > p:nth-child(4) {
+.leadership-team__column > p:nth-child(4), .leadership-team__strategic-advisors__column > p:nth-child(4) {
     color: rgb(94, 94, 94);
     font-family: 'Source Sans Pro', arial, sans-serif;
     font-size: 16px;
 }
 
-.leadership-card__column > a {
+.leadership-team__column > a, .leadership-team__strategic-advisors__column > a {
     color: rgb(199, 0, 0);
     text-decoration: underline;
-    margin-bottom: 10px;
 }
 
-.leadership-card__column > a:last-child {
+.leadership-team__column > a:last-child, .leadership-team__strategic-advisors__column > a:last-child{
     text-transform: uppercase;
     background: #c70000;
     color: white;
     text-decoration: none;
     font-family: 'Source Sans Pro', arial, sans-serif;
     display: block;
-    margin-top: 30px;
     width: 30%;
     border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
     padding: 12px 30px;
+    font-size: 12px;
+    position: absolute;
+    margin-left: 35%;
+    bottom: 0;
+}
+
+@media(max-width: 800px) {
+    .leadership-team__column, .leadership-team__strategic-advisors__column {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 450px) {
-    .leadership-card__column {
+    .leadership-team__column, .leadership-team__strategic-advisors__column {
         width: 300px;
         margin-bottom: 30px;
     }
-    .leadership-card__column > img {
+    .leadership-team__column > img, .leadership-team__strategic-advisors__column > img {
         width: 200px;
         height: 200px;
     }
 }
+
+/* Affiliations */
+
+#affiliations {
+    text-align: center;
+}
+
+#affiliation__header {
+    text-transform: uppercase;
+    font-family: 'Fjalla One', arial, sans-serif;
+    font-size: 28px;
+}
+
+#affiliations > div {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#affiliation > div > div {
+    position: relative;
+    width: 400px;
+}
+
+#affiliations > div:nth-child(odd) {
+    background-color: #F6F6F6;
+}
+
+#affiliations > div > div > img{
+    height: 150px;
+    width: 250px;
+}
+
