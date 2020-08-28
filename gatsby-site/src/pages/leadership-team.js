@@ -3,13 +3,18 @@ import { Link } from "gatsby"
 import "../components/app.css"
 import SEO from "../components/seo"
 import MUBCHeader from "../components/MUBCHeader"
+import MUBCNavbar from "../components/MUBCNavbar"
+import MUBCFooter from "../components/MUBCFooter"
 
 const LeadershipTeam = () => (
   <div>
     <MUBCHeader />
+    <MUBCNavbar />
+    <br/>
+    <br/>
     <SEO title="MUBC Leadership Team"/>
     <h2 id="leadership-team__header">Executive Leadership Team</h2>
-    <hr className="leadership-team__divider"/>
+    <hr className="divider"/>
     <div className="leadership-team__row">
       <div className="leadership-team__column">
         <img src={require("../images/jack_gilcrest.jpeg")} alt="Jack Gilcrest"/>
@@ -147,7 +152,7 @@ const LeadershipTeam = () => (
     </div>
     <div className="leadership-team__strategic-advisors">
       <h2 id="leadership-team__strategic-advisors__header">Strategic Advisors</h2>
-      <hr className="leadership-team__divider"/>
+      <hr className="divider"/>
       <div className="leadership-team__row">
         <div className="leadership-team__strategic-advisors__column">
           <img src={require("../images/arthur_carvalho.jpg")} alt="Dr. Arthur Carvalho"/>
@@ -221,7 +226,7 @@ const LeadershipTeam = () => (
         </div>
       </div>
     </div>
-    <Link to="/">Go back to the homepage</Link>
+    <MUBCFooter />
   </div>
 )
 

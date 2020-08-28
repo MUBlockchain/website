@@ -1,21 +1,157 @@
 /* MUBC Header */
 #mubc-header {
-    height: 150px;
     background-color: white;
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #mubc-header > h1 {
-    font-size: 28px;
+    font-size: 42px;
     font-family: "Fjalla One", arial, sans-serif;
     color: rgb(200, 53, 42);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* MUBC Navbar */
+
+#navbar {
+    height: 58px;
+}
+
+#nav {
+    margin-left: 100px;
+}
+
+.navbar__selection__active {
+    color: rgb(199, 0, 0) !important;
+    font-weight: 600;
+}
+
+.navbar__selection {
+    text-decoration: none;
+    color: rgba(0,0,0,.5);
+    transition: 0.3s;
+    font-family: "Source Sans Pro", arial, sans-serif;
+    font-size: 16px;
+    padding-right: 30px;
+}
+
+.navbar__selection:hover {
+    color: rgb(199, 0, 0);
+    text-decoration: none;
+}
+
+/* MUBC Home */
+
+#mubc-home__sessions {
+    text-align: center;
+}
+
+#mubc-home__sessions > div:nth-child(even) {
+    background-color: #F6F6F6;
+}
+
+#mubc-home__sessions > h1 {
+    font-size: 28px;
+    margin-top: 30px;
+    font-family: "Fjalla One", arial, sans-serif;
+    text-transform: uppercase;
+    color: rgb(199, 0, 0);
+    font-weight: 400;
+}
+
+#mubc-home__sessions > div  {
+     display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+#mubc-home__sessions > div > img {
+    margin-right: 40px;
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+
+#mubc-home__sessions > div > img:first-child  {
+    margin-left: 150px;
+}
+
+#mubc-home__conference-link {
+    height: 140px;
+    position: relative;
+}
+
+#mubc-home__conference-link > a {
+    text-transform: uppercase;
+    background-color: #c70000;
+    vertical-align: center;
+    position: relative;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 450px;
+    text-decoration: none;
+    color: white;
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+#mubc-home__blockathon {
+    height: 217px;
+    width: 100%;
+    display: flex;
+}
+
+#mubc-home__blockchain-conference {
+    height: 217px;
+    width: 100%;
+    display: flex;
+}
+
+#mubc-home__blockathon > div:first-child > h2 {
+    margin-top: 90px;
+}
+
+#mubc-home__about-us {
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 20px;
+    color: #c70000;
+}
+
+#mubc-home__socials {
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 20px;
+    color: #c70000;
+}
+
+#mubc-home__socials > h1{
+    margin-top: 50px;
+}
+
+#mubc-home__socials > div{
+    margin-top: 100px;
+}
+
+#mubc-home__map {
+    height: 300px;
+}
+
+#mubc-home__map > iframe{
+    width: 100%;
+    height: 300px;
 }
 
 
 /* Leadership Team */
 
-.leadership-team__divider{
+.divider{
     width: 50px;
     height: 2.5px;
     border-radius: 50px;
@@ -28,6 +164,7 @@
     font-size: 40px;
     color: #C8352A;
     font-family: 'Fjalla One', arial, sans-serif;
+    text-transform: uppercase;
 }
 
 #leadership-team__strategic-advisors__header {
@@ -36,6 +173,7 @@
     font-size: 40px;
     color: #C8352A;
     font-family: 'Fjalla One', arial, sans-serif;
+    text-transform: uppercase;
 }
 
 .leadership-team__row {
@@ -51,7 +189,7 @@
     padding-bottom: 20px;
 }
 
-.leadership-team__row:nth-child(odd) {
+.leadership-team__row:nth-child(even) {
    background-color: #F6F6F6;
 }
 
@@ -128,7 +266,13 @@
 @media(max-width: 800px) {
     .leadership-team__column, .leadership-team__strategic-advisors__column {
         margin-bottom: 40px;
+        height: auto;
     }
+    .leadership-team__column > a:last-child,  .leadership-team__strategic-advisors__column > a:last-child {
+        position: relative;
+        margin-top: 30px;
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -173,5 +317,69 @@
 #affiliations > div > div > img{
     height: 150px;
     width: 250px;
+}
+
+/* Member Portal */
+#member-portal {
+    text-align: center;
+}
+
+/* MUBC Footer */
+
+#mubc-footer {
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+#mubc-footer > p {
+    margin-top: 10px;
+}
+
+#mubc-footer > p:nth-child(3) {
+    font-weight: 600;
+}
+
+#mubc-footer > p > a {
+    color: #c70000;
+    text-decoration: underline;
+}
+
+#mubc-footer > div:nth-child(4) > a {
+    transition: 0.3s;
+    text-decoration: none;
+    color: dimgray;
+}
+
+#mubc-footer > div:nth-child(4) > a:hover {
+    color: #c70000;
+}
+
+#mubc-footer > div:nth-child(4) > a:first-child {
+    padding-right: 10px;
+}
+
+#mubc-footer > div:nth-child(4) > a:last-child {
+    padding-left: 10px;
+}
+
+#mubc-footer__icon-div {
+    margin-top: 70px;
+}
+
+.mubc-footer__media-link {
+    background-color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    padding: 2px 5px;
+}
+
+.mubc-footer__icon {
+    margin-top: -2px;
+    font-size: 15px;
+    color: white;
+
 }
 

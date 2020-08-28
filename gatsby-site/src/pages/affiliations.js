@@ -1,8 +1,14 @@
 import React from "react"
 import SEO from "../components/seo"
+import MUBCNavbar from "../components/MUBCNavbar"
+import MUBCHeader from "../components/MUBCHeader"
+import MUBCFooter from "../components/MUBCFooter"
 
 const Affiliations = () => {
   return (
+    <div>
+    <MUBCHeader />
+    <MUBCNavbar/>
     <div id="affiliations">
       <SEO title="MUBC Affiliations"/>
       <h1 id="affiliations__header">Our Partners</h1>
@@ -32,6 +38,8 @@ const Affiliations = () => {
         </div>
       </div>
       <div></div>
+    </div>
+      <MUBCFooter />
     </div>
   )
 }
