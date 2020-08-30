@@ -1,5 +1,6 @@
 import React from "react"
 import { FaTwitter, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa"
+import { Link } from 'gatsby'
 
 const MUBCFooter = () => {
   return (
@@ -13,7 +14,7 @@ const MUBCFooter = () => {
       <p>Email us: <a href="mailto:mubc@miamioh.edu">mubc@miamioh.edu</a></p>
       <p>In building future leaders by connecting them with the Blockchain Ecosystem to foster innovation. </p>
       <div>
-        <a href="https://mubc.io/2019-conference">2019 CONFERENCE</a>
+        <Link to="/conference-2019">2019 CONFERENCE</Link>
         <a href="https://mubc.io/mubc-blockchain-blog">MUBC BLOCKCHAIN BLOG</a>
       </div>
       <hr className="divider"/>

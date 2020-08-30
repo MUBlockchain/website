@@ -32,6 +32,7 @@
     font-family: "Source Sans Pro", arial, sans-serif;
     font-size: 16px;
     padding-right: 30px;
+    margin-top: 10px;
 }
 
 .navbar__selection__dropdown {
@@ -42,13 +43,24 @@
     margin-top: 2px;
 }
 
-.navbar__selection:hover,  .navbar__selection__dropdown:hover{
-    color: rgb(199, 0, 0) !important;
+.navbar__selection:hover {
+    color: rgb(199, 0, 0);
     text-decoration: none;
 }
 
+.navbar__selection__dropdown > a {
+    transition: 0.3s !important;
+
+}
+
+.navbar__selection__dropdown > a:hover {
+    color: #c70000 !important;
+}
+
+
 .navbar__profile {
     margin-left: 100px;
+    margin-top: 8px;
 }
 
 .navbar__profile > img {
@@ -67,6 +79,10 @@
 @media (max-width: 992px) {
     .navbar__profile {
         margin-left: 0px;
+        margin-top: 0px;
+    }
+    .navbar__selection {
+        margin-top: 5px;
     }
 }
 

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import "../components/app.css"
 import SEO from "../components/seo"
 import MUBCHeader from "../components/MUBCHeader"
