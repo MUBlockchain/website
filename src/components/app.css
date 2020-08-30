@@ -2,16 +2,38 @@
 #mubc-header {
     background-color: white;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    background-color: #c70000;
+    padding-top: 60px;
+    padding-bottom: 10px;
 }
 
-#mubc-header > h1 {
-    font-size: 42px;
-    font-family: "Fjalla One", arial, sans-serif;
-    color: rgb(200, 53, 42);
-    font-weight: 800;
-    text-transform: uppercase;
+#mubc-header > div:first-child {
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    z-index: 9999;
+    position: relative;
+}
+
+#mubc-header > div:first-child > a >  img{
+    position: relative;
+    margin-top: -50px;
+    transition: 0.3s;
+}
+
+#mubc-header > div:first-child > a >  img:hover{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+#mubc-header > div:last-child {
+    position: relative;
+    margin-top: -230px;
+    z-index: 3 !important;
 }
 
 /* MUBC Navbar */
