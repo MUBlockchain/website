@@ -10,7 +10,7 @@ const Conference_2019 = () => {
             <MUBCHeader/>
             <MUBCNavbar/>
             <div id="conference-2019">
-                <img src={require('../images/piggy_bank.jpg')} alt="Piggy Bank"/>
+                <img src={require('../images/conference_banner.jpg')} alt="Piggy Bank"/>
                 <div id="conference-2019__info">
                     <h1>2019 MIAMI UNIVERSITY BLOCKCHAIN CONFERENCE</h1>
                     <hr className="divider"/>
