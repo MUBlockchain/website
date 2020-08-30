@@ -53,29 +53,73 @@
 
 /* MUBC Home */
 
-#mubc-home__sessions {
-    text-align: center;
+#mubc-home__banner {
+    height: 800px;
 }
 
-#mubc-home__banner {
+#mubc-home__banner > div{
     background: url("../images/mubc_banner.jpg");
     background-size: cover;
     background-position: center center;
     width: 100%;
+    height: 100%;
+}
+
+#mubc-home__banner > div > div {
+    position: absolute;
+    margin-top: 500px;
+    display: block;
+    width: 400px;
+    height: 150px;
+    background-color: #c70000;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#mubc-home__banner > div > div > h1 {
+    color: white;
+}
+
+#mubc-home__banner > div > div > a {
+    position: relative;
+    display: block;
+    color: white;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#mubc-home__banner > div > div > a:hover {
+    text-decoration: none;
+}
+
+#mubc-home__sessions{
+    text-align: center;
+}
+
+#mubc-home__sessions > h1 {
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 48px;
+    color: #c70000;
+    font-weight: 500;
+    padding-top: 50px;
 }
 
 #mubc-home__sessions > div:nth-child(even) {
     background-color: #F6F6F6;
 }
 
-#mubc-home__sessions > h1 {
-    font-size: 28px;
-    margin-top: 30px;
-    font-family: "Fjalla One", arial, sans-serif;
-    text-transform: uppercase;
-    color: rgb(199, 0, 0);
-    font-weight: 400;
-}
 
 #mubc-home__virtual-blockchain-conference  {
      display: block;
@@ -96,61 +140,120 @@
 
 #mubc-home__conference-link {
     height: 140px;
+    text-align: center;
     position: relative;
+    padding-top: 40px;
 }
 
 #mubc-home__conference-link > a {
     text-transform: uppercase;
     background-color: #c70000;
-    vertical-align: center;
-    position: relative;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
     width: 450px;
     text-decoration: none;
     color: white;
-    font-family: "Fjalla One", arial, sans-serif;
-    font-size: 15px;
     font-weight: 700;
+    font-size: 15px;
     border-radius: 10px;
     padding: 15px 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#mubc-home__blockchain-conference {
+    height: 250px;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/conference_slideshow_1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center -180px;
+    position: relative;
+    width: 100%;
 }
 
 #mubc-home__blockathon {
-    height: 217px;
+    height: 250px;
     width: 100%;
-    display: flex;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/blockathon_banner.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
 }
 
-#mubc-home__blockchain-conference {
-    height: 217px;
-    width: 100%;
+#mubc-home__blockchain-conference > div, #mubc-home__blockathon > div {
+    width: 80%;
     display: flex;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 90px;
 }
 
-#mubc-home__blockathon > div:first-child > h2 {
-    margin-top: 90px;
+#mubc-home__blockchain-conference > div > div:first-child, #mubc-home__blockathon > div > div:first-child {
+    width: 80%;
+}
+
+#mubc-home__blockchain-conference > div > div:last-child, #mubc-home__blockathon > div > div:last-child {
+    width: 20%;
+    margin-top: 10px;
+}
+
+
+#mubc-home__blockchain-conference > div > div > h2, #mubc-home__blockathon > div > div > h2 {
+    color: white;
+}
+
+#mubc-home__blockchain-conference > div > div > a, #mubc-home__blockathon > div > div > a {
+    text-decoration: none;
+    color: white;
+    background-color: #c70000;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', arial, sans-serif;
 }
 
 #mubc-home__about-us {
-    font-family: "Fjalla One", arial, sans-serif;
-    font-size: 20px;
-    color: #c70000;
+    text-align: center;
 }
 
-#mubc-home__socials {
-}
-
-#mubc-home__socials > h1{
+#mubc-home__about-us > h1 {
     font-family: "Fjalla One", arial, sans-serif;
     font-size: 48px;
     color: #c70000;
-    font-weight: 500;
+    padding-top: 50px;
 }
 
-#mubc-home__socials > div {
+.mubc-home__about-us__container {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mubc-home__about-us__container > div {
+    width: 48%;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.mubc-home__about-us__container > div > img{
+    max-width: 550px;
+    max-height: 300px;
+    width: 100%;
+}
+
+.mubc-home__about-us__container > div > h2 {
+    color: rgb(21, 21, 21);
+    font-size: 22px;
+}
+
+.mubc-home__about-us__container > div > p {
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-size: 16px;
+    color: rgb(87, 87, 87);
 }
 
 #mubc-home__contact {
@@ -162,6 +265,7 @@
     font-size: 48px;
     color: #c70000;
     font-weight: 500;
+    padding-top: 50px;
 }
 
 #mubc-home__contact__form__container {
@@ -232,6 +336,12 @@
     height: 200px;
 }
 
+#mubc-home__contact__send {
+   color: white;
+    background-color: #c70000;
+    border: none;
+}
+
 #mubc-home__map {
     height: 450px;
     overflow: hidden;
@@ -241,6 +351,52 @@
     width: 100%;
     height: 100%;
 }
+
+#mubc-home__socials {
+    padding-bottom: 80px;
+}
+
+#mubc-home__socials > h1 {
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 48px;
+    color: #c70000;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+#mubc-home__socials > div  {
+    margin-top: 100px;
+}
+
+#mubc-home__socials > div > a {
+    border-radius: 50%;
+    padding: 25px 15px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+#mubc-home__socials > div > a:first-child {
+    background-color: #389CEA;
+}
+
+#mubc-home__socials > div > a:nth-child(2) {
+    background-color: #E1426C;
+}
+
+#mubc-home__socials > div > a:nth-child(3) {
+    background-color: #2867B2;
+}
+
+#mubc-home__socials > div > a:last-child {
+    background-color: #E93F33;
+}
+
+.mubc-home__icon {
+    color: white;
+    margin-top: -3px;
+    font-size: 40px;
+}
+
 
 @media (max-width: 1205px) {
     #mubc-home__contact__right > p, #mubc-home__contact__left > p {
@@ -263,7 +419,79 @@
     #mubc-home__contact__right {
         margin-bottom: 70px;
     }
+}
 
+@media (max-width: 850px) {
+    .mubc-home__about-us__container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .mubc-home__about-us__container > div {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mubc-home__about-us__container:last-child > div:first-child {
+        order: 2;
+    }
+
+    .mubc-home__about-us__container:last-child > div:last-child {
+        order: 1;
+    }
+}
+
+@media (max-width: 845px) {
+    #mubc-home__blockchain-conference, #mubc-home__blockathon {
+        background-position: center;
+    }
+
+    #mubc-home__blockchain-conference > div {
+        display: block;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    #mubc-home__blockathon > div {
+        display: block;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    #mubc-home__blockchain-conference > div > div:first-child, #mubc-home__blockathon  > div > div:first-child {
+        width: 100%;
+    }
+
+    #mubc-home__blockchain-conference > div > div:first-child > h2, #mubc-home__blockathon  > div > div:first-child > h2 {
+        font-size: 30px;
+    }
+
+    #mubc-home__blockchain-conference > div > div:last-child, #mubc-home__blockathon > div > div:last-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 475px) {
+
+    #mubc-home__conference-link {
+        padding-top: 25px;
+    }
+
+    #mubc-home__conference-link > a {
+        font-size: 15px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 460px) {
+    #mubc-home__socials > div > a {
+        padding: 10px 8px;
+    }
+
+    .mubc-home__icon {
+        margin-top: -3px;
+        font-size: 20px;
+    }
 }
 
 
