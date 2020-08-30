@@ -14,30 +14,37 @@ const Affiliations = () => {
       <h1 id="affiliations__header">Our Partners</h1>
       <div>
         <div>
-          <img src={require("../images/farmer.png")}/>
+          <img id="farmer_image" src={require("../images/farmer.png")} alt="Farmer"/>
         </div>
         <div>
-          <img src={require("../images/greenblock.jpg")}/>
+          <img id="greenblock_image" src={require("../images/greenblock.jpg")} alt="Greenblock"/>
         </div>
         <div>
-          <img src={require("../images/coinninja.jpg")}/>
+          <img id="coinninja_image" src={require("../images/coinninja.jpg")} alt="Coinninja"/>
         </div>
         <div>
-          <img src={require("../images/farmer.png")}/>
+          <img id="mousebelt_image" src={require("../images/mousebelt.png")} alt="Mousebelt"/>
         </div>
       </div>
       <div>
         <div>
-          <img src={require("../images/blox.png")}/>
+          <img id="blox_image" src={require("../images/blox.png")} alt="Blox"/>
         </div>
         <div>
-          <img src={require("../images/blockkey_capital.jpg")}/>
+          <img id="block_key_image" src={require("../images/blockkey_capital.png")} alt="Block Key Captital"/>
         </div>
         <div>
-          <img src={require("../images/block_tribune.png")}/>
+          <img id="block_tribune_image" src={require("../images/blocktribune.png")} alt="Block Tribune"/>
         </div>
       </div>
-      <div></div>
+      <div>
+        <div>
+          <img id="big_b_image "src={require("../images/bigbidk.png")} alt="Big B"/>
+        </div>
+        <div>
+          <img id="ben_image" src={require("../images/ben.png")} alt="Blockchain Education Network"/>
+        </div>
+      </div>
     </div>
       <MUBCFooter />
     </div>

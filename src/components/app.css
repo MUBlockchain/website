@@ -38,8 +38,16 @@
     padding-right: 30px;
 }
 
-.navbar__selection:hover {
-    color: rgb(199, 0, 0);
+.navbar__selection__dropdown {
+    transition: 0.3s;
+    font-family: "Source Sans Pro", arial, sans-serif;
+    font-size: 16px;
+    padding-right: 30px;
+    margin-top: 2px;
+}
+
+.navbar__selection:hover,  .navbar__selection__dropdown:hover{
+    color: rgb(199, 0, 0) !important;
     text-decoration: none;
 }
 
@@ -160,6 +168,7 @@
 }
 
 #leadership-team__header {
+    margin-top: -10px;
     text-align: center;
     font-size: 40px;
     color: #C8352A;
@@ -308,20 +317,483 @@
 #affiliation > div > div {
     position: relative;
     width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #affiliations > div:nth-child(odd) {
     background-color: #F6F6F6;
 }
 
-#affiliations > div > div > img{
+#farmer_image {
     height: 150px;
-    width: 250px;
+    width: 350px;
+    padding-right: 40px;
+    margin-top: -10px;
 }
+
+#greenblock_image {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 350px;
+    margin-top: 40px;
+}
+
+#coinninja_image {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 350px;
+    margin-top: 30px;
+}
+
+#mousebelt_image {
+    padding-left: 40px;
+    width: 350px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+#blox_image {
+    width: 350px;
+    padding-right: 40px;
+    margin-top: 50px;
+}
+
+#block_key_image {
+    width: 450px;
+    margin-top: 80px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#block_tribune_image {
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+#big_b_image {
+    padding-right: 100px;
+    width: 350px;
+}
+
+#ben_image {
+    width: 450px;
+    height: 200px;
+    padding-left: 100px;
+}
+
+@media (max-width: 700px) {
+    #farmer_image,  #greenblock_image, #coinninja_image, #mousebelt_image, #blox_image, #block_key_image, #block_tribune_image, #big_b_image, #ben_image {
+        padding: 0 !important;
+    }
+}
+
 
 /* Member Portal */
 #member-portal {
     text-align: center;
+}
+
+#member-portal > h1 {
+    margin-top: 30px;
+    font-family: 'Fjalla One', arial, sans-serif;
+    font-size: 38px;
+    color: #c70000;
+}
+
+#member-portal > p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Source Sans Pro", arial, sans-serif;
+    opacity: .8;
+}
+
+#member-portal > input {
+    width: 58%;
+    margin-bottom: 30px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#member-portal__sign-in, #member-portal__reset{
+    background-color: #c70000;
+    border: none;
+    padding: 12px 25px;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    margin-top: 20px;
+}
+
+#member-portal__reset-link, #member-portal__sign-in__link {
+    color: #c70000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#member-portal__reset-link:hover {
+    opacity: .5;
+}
+
+#member-portal__container > div:last-child {
+    background-color: #F6F6F6;
+}
+
+/* Blockathon 2019 */
+
+#blockathon-2019 {
+    text-align: center;
+}
+
+#blockathon-2019 > img {
+    max-width: 875px;
+    height: 100%;
+    width: 80%;
+    margin-top: 60px;
+}
+
+#blockathon-2019 > h1 {
+    margin-top: 30px;
+    font-family: 'Fjalla One', arial, sans-serif;
+    font-size: 38px;
+    color: #c70000;
+}
+
+#blockathon-2019__description {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#blockathon-2019__description > p:first-child {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(27, 27, 27);
+    font-weight: 400;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+}
+
+.blockathon-2019__subheading {
+    color: rgb(94, 94, 94);
+    font-size: 16px;
+}
+
+.blockathon-2019__rankings {
+    font-weight: 700;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    color: rgb(94, 94, 94);
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.blockathon-2019__ranking__list {
+    margin-top: 0px;
+    font-weight: 400;
+    color: rgb(94, 94, 94);
+    margin-left: 60px;
+    font-size: 15px;
+}
+
+#blockathon-2019__qa {
+    background-color: #F6F6F6;
+}
+
+#blockathon-2019__qa > h1 {
+    padding-top: 50px;
+    font-family: 'Fjalla One', arial, sans-serif;
+    font-size: 38px;
+    color: #c70000;
+}
+
+#blockathon-2019__qa > div {
+    width: 55%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#blockathon-2019__qa > div > h4 {
+    font-size: 22px;
+    color: rgb(21, 21, 21);
+    font-weight: 400;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+}
+
+#blockathon-2019__qa > div > p {
+    font-size: 16px;
+    color: rgb(87, 87, 87);
+    font-weight: 400;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#blockathon-2019__qa > div > h4:first-child {
+    margin-top: 40px;
+}
+
+@media (max-width: 860px) {
+    #blockathon-2019__qa > div {
+        width: 85%;
+    }
+    #blockathon-2019__description {
+        width: 85%;
+    }
+}
+
+/* Conference 2019 */
+
+#conference-2019 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#conference-2019 > img {
+    max-width: 875px;
+    height: 100%;
+    width: 80%;
+    margin-top: 60px;
+}
+
+#conference-2019__info {
+    text-align: center;
+}
+
+#conference-2019__info > h1{
+    padding-top: 50px;
+    font-family: 'Fjalla One', arial, sans-serif;
+    font-size: 38px;
+    color: #c70000;
+}
+
+#conference-2019__info__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+#conference-2019__info__left {
+    text-align: left;
+    width: 70%;
+}
+
+#conference-2019__info__right {
+    text-align: left;
+    width: 30%;
+}
+
+#conference-2019__info__left > h4, #conference-2019__info__right > h4 {
+    font-weight: 400;
+    color: rgb(27, 27, 27);
+    font-size: 22px;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+}
+
+#conference-2019__info__left > p, #conference-2019__info__right > p {
+    margin-top: 30px;
+    color: rgb(94, 94, 94);
+    font-size: 16px;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    width: 95%;
+}
+
+#conference-2019__info__left > p > a, #conference-2019__info__right > p > a {
+    color: #c70000;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+#conference-2019__info__left > p > a:hover, #conference-2019__info__right > p > a:hover {
+    opacity: .5;
+}
+
+#conference-2019__info__right > a {
+    background: #c70000;
+    color: white;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    border-radius: 5px;
+    padding: 18px 20px;
+    font-size: 18px;
+    margin-top: 30px;
+    width: 160px;
+}
+
+#conference-2019__info__right > a:hover {
+    opacity: .8;
+}
+
+
+#conference-2019__recording {
+    text-align: center;
+    background-color: #161616;
+}
+
+#conference-2019__recording > h1{
+    padding-top: 50px;
+    font-family: 'Fjalla One', arial, sans-serif;
+    font-size: 38px;
+    color: #c70000;
+}
+
+#conference-2019__recording > iframe {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 600px;
+}
+
+.conference-2019__guests {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.conference-2019__guests > h1 {
+    padding-top: 50px;
+    font-family: 'Fjalla One', arial, sans-serif;
+    font-size: 38px;
+    color: #c70000;
+}
+
+.conference-2019__guests > div {
+    text-align: center;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conference-2019__guests > div > div {
+    text-align: center;
+    position: relative;
+    width: 350px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.conference-2019__guests > div > div > img {
+    border-radius: 50%;
+    width: 223px;
+    height: 223px;
+}
+
+.conference-2019__guests > div > div > h4 {
+    color: rgb(27, 27, 27);
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.conference-2019__guests > div > div > p {
+    font-weight: 400;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+    margin-top: 25px;
+}
+
+.conference-2019__guests > div > div > p > a {
+    color: #c70000;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.conference-2019__guests > div > div > p > a:hover {
+    opacity: .5;
+}
+
+.conference-2019__guests > div > div > a {
+    text-transform: uppercase;
+    background: #c70000;
+    color: white;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    display: block;
+    width: 60%;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    margin-left: 20%;
+    bottom: 0;
+}
+
+#conference-2019__photos {
+    text-align: center;
+    background-color: #F6F6F6;
+    position: relative;
+}
+
+#conference-2019__photos > h1 {
+    padding-top: 50px;
+    font-family: 'Fjalla One', arial, sans-serif;
+    font-size: 38px;
+    color: #c70000;
+}
+
+#conference-2019__slideshow {
+    background-color: darkgrey;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conference-2019__slideshow_image {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+}
+
+@media (max-width: 1025px) {
+    #conference-2019__info__container {
+        display: block;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    #conference-2019__info__left, #conference-2019__info__right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    #conference-2019__recording > iframe {
+        height: 400px;
+    }
+}
+
+@media (max-width: 780px) {
+    .conference-2019__guests > div > div > a {
+        position: relative;
+    }
+}
+
+@media (max-width: 600px) {
+    #conference-2019__recording > iframe {
+        height: 300px;
+    }
 }
 
 /* MUBC Footer */
