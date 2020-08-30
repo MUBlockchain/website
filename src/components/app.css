@@ -933,6 +933,10 @@
     margin-top: 60px;
 }
 
+#conference-2019 > div:nth-child(odd) {
+    background-color: #F6F6F6;
+}
+
 #conference-2019__info {
     text-align: center;
 }
@@ -1013,6 +1017,7 @@
 #conference-2019__recording {
     text-align: center;
     background-color: #161616;
+    margin-bottom: -50px;
 }
 
 #conference-2019__recording > h1{
