@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel } from "react-bootstrap";
+import {Carousel} from "react-bootstrap";
 import MUBCHeader from "../components/MUBCHeader";
 import MUBCNavbar from "../components/MUBCNavbar";
 import MUBCFooter from "../components/MUBCFooter";
@@ -34,9 +34,12 @@ const Conference_2019 = () => {
                                     page</strong></a>, where we
                                 have also posted videos from all of the talks.</p>
                             <p>Speakers said the event was very professional and up to par with other large Conferences
-                                put on by companies like <a href="https://www.blocklandcleveland.com/">Blockland Cleveland</a>. MUBC plans to host the Second Annual Miami
-                                University Blockchain Conference next Spring. Our next big event is our <a href="https://mubc.io/registration-1"><strong>Blockchain
-                                    Hackathon</strong></a> coming up in the fall. We are always looking for <a href="https://mubc.io/2019-conference#"><strong>sponsors!</strong></a></p>
+                                put on by companies like <a href="https://www.blocklandcleveland.com/">Blockland
+                                    Cleveland</a>. MUBC plans to host the Second Annual Miami
+                                University Blockchain Conference next Spring. Our next big event is our <a
+                                    href="https://mubc.io/registration-1"><strong>Blockchain
+                                    Hackathon</strong></a> coming up in the fall. We are always looking for <a
+                                    href="https://mubc.io/2019-conference#"><strong>sponsors!</strong></a></p>
                         </div>
                         <div id="conference-2019__info__right">
                             <h4>Conference in the News</h4>
@@ -86,7 +89,8 @@ const Conference_2019 = () => {
                             />
 
                             <Carousel.Caption>
-                                <p>Vasanthi Chalasani, Director of IT at P&G about their Supply Chain Blockchain Solution and how it affects corporations</p>
+                                <p>Vasanthi Chalasani, Director of IT at P&G about their Supply Chain Blockchain
+                                    Solution and how it affects corporations</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -97,7 +101,94 @@ const Conference_2019 = () => {
                             />
 
                             <Carousel.Caption>
-                                <p>Vasanthi Chalasani, Director of IT at P&G about their Supply Chain Blockchain Solution and how it affects corporations</p>
+                                <p>Jack Gilcrest and Karan Gupta from CleverApply, an MUBC Startup focusing on
+                                    International Student Application process and Document Management</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="conference-2019__slideshow_image"
+                                src={require('../images/conference_slideshow_6.jpg')}
+                                alt="Sixth slide"
+                            />
+
+                            <Carousel.Caption>
+                                <p>Permissioned Blockchain Solutions</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="conference-2019__slideshow_image"
+                                src={require('../images/conference_slideshow_7.jpg')}
+                                alt="Seventh slide"
+                            />
+
+                            <Carousel.Caption>
+                                <p>Charlie Lougheed Co-Founder of Unify Project. Talked about the Socioeconomic benefit
+                                    of Blockchain.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="conference-2019__slideshow_image"
+                                src={require('../images/conference_slideshow_8.jpg')}
+                                alt="Eigth slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="conference-2019__slideshow_image"
+                                src={require('../images/conference_slideshow_9.jpg')}
+                                alt="Ninth slide"
+                            />
+
+                            <Carousel.Caption>
+                                <p>John Squires, CEO and Founder of Finclusive</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="conference-2019__slideshow_image"
+                                src={require('../images/conference_slideshow_10.jpg')}
+                                alt="Tenth slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="conference-2019__slideshow_image"
+                                src={require('../images/conference_slideshow_11.jpg')}
+                                alt="Eleventh slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="conference-2019__slideshow_image"
+                                src={require('../images/conference_slideshow_12.jpg')}
+                                alt="Twelfth slide"
+                            />
+                            <Carousel.Caption>
+                                <p>Nico Katsafanas and Hyden Hoogerhyde with Block Key Capital, an MUBC Startup</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="conference-2019__slideshow_image"
+                                src={require('../images/conference_slideshow_13.jpg')}
+                                alt="Thirteenth slide"
+                            />
+                            <Carousel.Caption>
+                                <p> Billy Becker and Dhairya Desai with blOX Consulting on what it's like Consulting in
+                                    the Blockchain space</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="conference-2019__slideshow_image"
+                                src={require('../images/conference_slideshow_14.jpg')}
+                                alt="Fourteenth slide"
+                            />
+                            <Carousel.Caption>
+                                <p> Ashton Barger President of MUBC, CEO and Co-Founder of blOX Consulting, CMO and Co-Founder of CleverApply</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>

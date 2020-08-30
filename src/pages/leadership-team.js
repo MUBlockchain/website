@@ -44,7 +44,7 @@ const LeadershipTeam = () => (
         <a href="https://www.linkedin.com/in/alexandra-bartkoske/">LinkedIn</a>
       </div>
       <div className="leadership-team__column">
-        <img src={require("../images/alex_stan.jpg")} alt="Alex Stan"/>
+        <img src={require('../images/alex_stan.jpg')} alt="Alex Stan"/>
         <p>Alex Stan</p>
         <p>VP of Professional Development</p>
         <p>Alex Stan is a sophomore Accountancy major in the Farmer School of Business. Alex is very passionate about
@@ -61,7 +61,7 @@ const LeadershipTeam = () => (
     </div>
     <div className="leadership-team__row">
       <div className="leadership-team__column">
-        <img src={require("../images/peter_cooke.jpeg")} alt="Peter Cooke"/>
+        <img src={require("../images/peter_cook.jpg")} alt="Peter Cooke"/>
         <p>Peter Cooke</p>
         <p>VP of Projects</p>
         <p>Peter Cooke is a Junior Computer Science Major and has worked on multiple large-scale projects. Peter
@@ -190,7 +190,7 @@ const LeadershipTeam = () => (
       </div>
       <div className="leadership-team__row">
         <div className="leadership-team__strategic-advisors__column">
-          <img src={require("../images/jeffery_w_merhout.jpg")} alt="Jeffrey W. Merhout"/>
+          <img src={require("../images/jeffrey_w_merhout.jpg")} alt="Jeffrey W. Merhout"/>
           <p>Jeffrey W. Merhout</p>
           <p>Academic Advisor</p>
           <p> Jeffrey W. Merhout is an Associate Professor of Information Systems in the Farmer School of Business at

@@ -78,8 +78,8 @@
 
 #mubc-home__sessions > div > img {
     margin-right: 40px;
-    width: 800px;
-    height: 400px;
+    width: 600px;
+    height: 300px;
     position: relative;
 }
 
@@ -224,6 +224,7 @@
     border-radius: 50%;
     width: 223px;
     height: 223px;
+    image-rendering: crisp-edges;
 }
 
 .leadership-team__column > p, .leadership-team__strategic-advisors__column > p{
@@ -738,6 +739,7 @@
     text-align: center;
     background-color: #F6F6F6;
     position: relative;
+    padding-bottom: 40px;
 }
 
 #conference-2019__photos > h1 {
