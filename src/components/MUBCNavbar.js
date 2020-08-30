@@ -23,6 +23,7 @@ const MUBCNavbar = () => {
                                         to="/member-portal">Member Portal</Link></Nav.Link>
                         <Nav.Link><Link activeClassName="navbar__selection__active" className="navbar__selection"
                                         to="/fall2020">Fall Events</Link></Nav.Link>
+                        <Nav.Link><Link to="/member-portal" className="navbar__profile"><img src={require('../images/stock_profile_icon.png')} alt="Profile" /></Link></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
