@@ -13,7 +13,7 @@ const MUBCHeader = () => {
             <Particles height="250px" params={{
                 particles: {
                     "number": {
-                        "value": 100
+                        "value": 30
                     },
                     "size": {
                         "value": 3

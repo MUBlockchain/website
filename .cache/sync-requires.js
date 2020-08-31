@@ -10,6 +10,7 @@ exports.components = {
   "component---src-pages-affiliations-js": hot(preferDefault(require("/Users/ianbrighton/Documents/Blockchain/github-projects/mubc-website/src/pages/affiliations.js"))),
   "component---src-pages-blockathon-2019-js": hot(preferDefault(require("/Users/ianbrighton/Documents/Blockchain/github-projects/mubc-website/src/pages/blockathon-2019.js"))),
   "component---src-pages-conference-2019-js": hot(preferDefault(require("/Users/ianbrighton/Documents/Blockchain/github-projects/mubc-website/src/pages/conference-2019.js"))),
+  "component---src-pages-fall-2020-js": hot(preferDefault(require("/Users/ianbrighton/Documents/Blockchain/github-projects/mubc-website/src/pages/fall-2020.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/ianbrighton/Documents/Blockchain/github-projects/mubc-website/src/pages/index.js"))),
   "component---src-pages-leadership-team-js": hot(preferDefault(require("/Users/ianbrighton/Documents/Blockchain/github-projects/mubc-website/src/pages/leadership-team.js"))),
   "component---src-pages-member-portal-js": hot(preferDefault(require("/Users/ianbrighton/Documents/Blockchain/github-projects/mubc-website/src/pages/member-portal.js")))

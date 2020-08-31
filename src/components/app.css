@@ -11,11 +11,12 @@
     width: 350px;
     height: 250px;
     background-color: white;
+    opacity: .8;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-top: -20px;
-    z-index: 9999;
+    z-index: 99;
     position: relative;
 }
 
@@ -33,7 +34,7 @@
 #mubc-header > div:last-child {
     position: relative;
     margin-top: -230px;
-    z-index: 3 !important;
+    z-index: 3 ;
 }
 
 /* MUBC Navbar */
@@ -1267,4 +1268,169 @@
     color: white;
 
 }
+
+/* Fall 2020 Events */
+
+.fall-2020 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.fall-2020 > h1 {
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 48px;
+    color: #c70000;
+    font-weight: 500;
+}
+
+@media (max-width: 540px) {
+    .fall-2020 {
+        width: 95%;
+    }
+}
+
+/* Event Row */
+
+.mubcEventRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    cursor: pointer;
+}
+
+.mubcEventRow:hover {
+    opacity: .5;
+}
+
+.mubcEventRow__date {
+    text-align: center;
+    width: 150px;
+    background-color: #c70000;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    padding: 4.5px 0px;
+    z-index: 20;
+}
+
+.mubcEventRow__date:after {
+    content: "";
+    position: absolute;
+    margin-left: 4.7%;
+    margin-top: -78px;
+}
+
+.mubcEventRow__date > h4{
+   font-weight: 900;
+    margin-right: 15px;
+}
+
+.mubcEventRow__title {
+    text-align: center;
+    width: 110%;
+    padding: 7.5px 0px;
+    z-index: 10;
+}
+
+.mubcEventRow__title > h5 {
+    font-weight: 900;
+}
+
+@media (max-width: 888px) {
+    .mubcEventRow__title > h5 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 711px) {
+    .mubcEventRow__title > h5 {
+        font-size: 14px;
+    }
+    .mubcEventRow__date > h4 {
+        font-size: 16px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 595px) {
+
+    .mubcEventRow__title > h5 {
+        font-size: 12px;
+    }
+    .mubcEventRow__date > h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .mubcEventRow__date > h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 433px) {
+    .mubcEventRow__title > h5 {
+        font-size: 10px;
+    }
+}
+
+/* MUBC Event Modal */
+
+.mubEventModal {
+    z-index: 9999999 !important;
+    position: relative !important;
+}
+
+.mubcEventModal__header {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mubcEventModal__header > div:last-child{
+    margin-left: 50px;
+}
+
+.mubcEventModal__body > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.mubcEventModal__body > p {
+    text-align: center;
+    color: rgb(94, 94, 94);
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-size: 20px;
+}
+
+.mubcEventModal__footer {
+    display: block;
+    text-align: center;
+}
+
+.mubcEventModal__footer > p {
+    color: rgb(94, 94, 94);
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-size: 20px;
+}
+
+.mubcEventModal__footer > a {
+    color: #c70000;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.mubcEventModal__footer > a:hover {
+    opacity: .5;
+}
+
 
