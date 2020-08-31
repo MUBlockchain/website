@@ -6,14 +6,18 @@ const MUBCHeader = () => {
     return (
         <div id="mubc-header">
             <div>
+            </div>
+            <div>
                 <Link to="/">
-                <img src={require('../images/logo.png')} alt="Logo"/>
+                    <img src={require('../images/MUBC Logo Big Letters (vector) copy 2.png')} alt="Logo"/>
+                    <br/>
+                    <img src={require('../images/MUBC Logo Big Letters (vector) copy.png')} alt="Logo"/>
                 </Link>
             </div>
             <Particles height="250px" params={{
                 particles: {
                     "number": {
-                        "value": 30
+                        "value": 40
                     },
                     "size": {
                         "value": 3

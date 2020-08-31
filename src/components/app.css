@@ -9,9 +9,9 @@
 
 #mubc-header > div:first-child {
     width: 350px;
-    height: 250px;
-    background-color: white;
-    opacity: .8;
+    height: 220px;
+    background-color: black;
+    opacity: .5;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -20,13 +20,33 @@
     position: relative;
 }
 
-#mubc-header > div:first-child > a >  img{
+#mubc-header > div:nth-child(2) {
+    margin-top: -220px;
+    z-index: 999;
     position: relative;
-    margin-top: -50px;
-    transition: 0.3s;
+    width: 350px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#mubc-header > div:first-child > a >  img:hover{
+#mubc-header >  div:nth-child(2) > a >  img:first-child{
+    position: relative;
+    margin-top: 0px;
+    transition: 0.3s;
+    width: 200px;
+    height: 170px;
+}
+
+#mubc-header >  div:nth-child(2) > a >  img:last-child{
+    position: relative;
+    margin-top: -30px;
+    transition: 0.3s;
+    width: 150px;
+    height: 50px;
+}
+
+#mubc-header > div:nth-child(2):hover{
     filter: blur(3px);
     -webkit-filter: blur(3px);
 }
