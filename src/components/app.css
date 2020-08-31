@@ -28,6 +28,7 @@
     height: 220px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 
 #mubc-header >  div:nth-child(2) > a >  img:first-child{
