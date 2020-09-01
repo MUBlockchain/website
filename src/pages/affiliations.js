@@ -7,11 +7,11 @@ import MUBCFooter from "../components/MUBCFooter"
 const Affiliations = () => {
   return (
     <div>
+      <SEO title="Affiliations" description="Miami University Blockchain Club affiliates and sponsors"/>
     <MUBCHeader />
     <MUBCNavbar/>
     <div id="affiliations">
-      <SEO title="MUBC Affiliations"/>
-      <h1 id="affiliations__header">Our Partners</h1>
+      <h2>Our Partners</h2>
       <div>
         <div>
           <img id="farmer_image" src={require("../images/farmer.png")} alt="Farmer"/>

@@ -7,11 +7,11 @@ import MUBCFooter from "../components/MUBCFooter"
 
 const LeadershipTeam = () => (
   <div>
+    <SEO title="Leadership Team" description="Miami University Blockchain Club leadership team and advisors"/>
     <MUBCHeader />
     <MUBCNavbar />
     <br/>
     <br/>
-    <SEO title="MUBC Leadership Team"/>
     <h2 id="leadership-team__header">Executive Leadership Team</h2>
     <hr className="divider"/>
     <div className="leadership-team__row">

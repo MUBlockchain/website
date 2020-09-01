@@ -1,6 +1,6 @@
 import React from "react"
 import {FaTwitter, FaInstagram, FaYoutube, FaLinkedin} from "react-icons/fa"
-import {Button} from 'react-bootstrap'
+import {Button} from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import SEO from "../components/seo"
 import MUBCHeader from "../components/MUBCHeader"
@@ -10,7 +10,7 @@ import MUBCFooter from "../components/MUBCFooter"
 
 const IndexPage = () => (
     <div>
-        <SEO title="Home"/>
+        <SEO title="Home" description="Miami University Blockchain Club home page"/>
         <MUBCHeader/>
         <MUBCNavbar/>
         <div id="mubc-home__banner">

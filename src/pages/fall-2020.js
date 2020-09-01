@@ -7,12 +7,12 @@ import MUBCNavbar from "../components/MUBCNavbar";
 const FallEvents = () => {
     return (
         <div>
+            <SEO title="Fall 2020" description="Miami University Blockchain Club schedule of Fall 2020 events"/>
             <MUBCHeader/>
             <MUBCNavbar/>
             <div className="fall-2020">
                 <h1>Fall 2020 Schedule</h1>
                 <hr className="divider"/>
-                <SEO title="Fall 2020"/>
                 <MUBCEventRow date={'15 SEP'} title={'Info Night #1'} body={'Test body'} links={'https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content'} image={<img src={require('../images/logo.png')} alt="Logo"/>}/>
                 <MUBCEventRow date={'16 SEP'} title={'Info Night #2'}/>
                 <MUBCEventRow date={'23 SEP'} title={'Workshop #1: Build and Deploy a Supply Chain dApp'}/>

@@ -1,12 +1,14 @@
-import React from 'react'
-import {Carousel} from "react-bootstrap";
-import MUBCHeader from "../components/MUBCHeader";
-import MUBCNavbar from "../components/MUBCNavbar";
-import MUBCFooter from "../components/MUBCFooter";
+import React from "react"
+import {Carousel} from "react-bootstrap"
+import SEO from "../components/seo"
+import MUBCHeader from "../components/MUBCHeader"
+import MUBCNavbar from "../components/MUBCNavbar"
+import MUBCFooter from "../components/MUBCFooter"
 
 const Conference_2019 = () => {
     return (
         <div>
+            <SEO title="Conference 2019" description="Miami University Blockchain Club 2019 Conference information"/>
             <MUBCHeader/>
             <MUBCNavbar/>
             <div id="conference-2019">

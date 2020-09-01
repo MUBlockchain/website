@@ -1,11 +1,13 @@
-import React from 'react'
-import MUBCHeader from "../components/MUBCHeader";
-import MUBCNavbar from "../components/MUBCNavbar";
-import MUBCFooter from "../components/MUBCFooter";
+import React from "react"
+import SEO from "../components/seo"
+import MUBCHeader from "../components/MUBCHeader"
+import MUBCNavbar from "../components/MUBCNavbar"
+import MUBCFooter from "../components/MUBCFooter"
 
 const Blockathon_2019 = () => {
     return (
         <div id="blockathon-2019">
+            <SEO title="Blockathon 2019" description="Miami University Blockchain Club 2019 Blockathon information"/>
             <MUBCHeader/>
             <MUBCNavbar/>
             <img src={require('../images/piggy_bank.jpg')} alt="Piggy Bank"/>

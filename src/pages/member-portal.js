@@ -1,19 +1,21 @@
-import React, {useState} from 'react'
-import {Button} from 'react-bootstrap'
+import React, {useState} from "react"
+import {Button} from "react-bootstrap"
+import SEO from "../components/seo"
 import MUBCHeader from "../components/MUBCHeader"
 import MUBCNavbar from "../components/MUBCNavbar"
-import MUBCFooter from "../components/MUBCFooter";
+import MUBCFooter from "../components/MUBCFooter"
 
 const MemberPortal = () => {
     const [reset, setReset] = useState(false)
 
     return (
         <div>
+            <SEO title="Member Portal" description="Miami University Blockchain Club member portal sign-up and sign-in"/>
             <MUBCHeader/>
             <MUBCNavbar/>
             <div id="member-portal__container">
                 {!reset ? <div id="member-portal">
-                        <h1>Account Sign In</h1>
+                        <h2>Account Sign In</h2>
                         <hr className="divider"/>
                         <p>Sign in to your account to access your profile, history, and any private pages you've been
                             granted

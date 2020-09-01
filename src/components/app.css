@@ -585,12 +585,12 @@
 }
 
 #leadership-team__header {
-    margin-top: -10px;
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 48px;
+    color: #c70000;
+    font-weight: 500;
+    padding-top: 10px;
     text-align: center;
-    font-size: 40px;
-    color: #C8352A;
-    font-family: 'Fjalla One', arial, sans-serif;
-    text-transform: uppercase;
 }
 
 #leadership-team__strategic-advisors__header {
@@ -719,10 +719,12 @@
     text-align: center;
 }
 
-#affiliation__header {
-    text-transform: uppercase;
-    font-family: 'Fjalla One', arial, sans-serif;
-    font-size: 28px;
+#affiliations > h2 {
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 #affiliations > div {
@@ -812,11 +814,12 @@
     text-align: center;
 }
 
-#member-portal > h1 {
-    margin-top: 30px;
-    font-family: 'Fjalla One', arial, sans-serif;
-    font-size: 38px;
+#member-portal > h2 {
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 48px;
     color: #c70000;
+    font-weight: 500;
+    padding-top: 50px;
 }
 
 #member-portal > p {
