@@ -1,14 +1,20 @@
 import React from "react"
-
-import Layout from "../components/layout"
 import SEO from "../components/seo"
+import MUBCHeader from "../components/MUBCHeader";
+import MUBCNavbar from "../components/MUBCNavbar";
+import MUBCFooter from "../components/MUBCFooter";
 
 const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+    <div>
+        <SEO title="404" description="This page does not exists"/>
+        <MUBCHeader/>
+        <MUBCNavbar/>
+        <div className="not-found">
+                <h2>404.... Looks like you're lost!!!</h2>
+                <img src={require('../images/bitconnect.png')} alt="Bitconnect" />
+        </div>
+        <MUBCFooter/>
+    </div>
 )
 
 export default NotFoundPage
