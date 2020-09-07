@@ -8,24 +8,26 @@
 }
 
 #mubc-header > div:first-child {
-    width: 350px;
-    height: 220px;
+    width: 290px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    margin-top: -40px;
     background-color: black;
     opacity: .5;
     border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -20px;
     z-index: 99;
     position: relative;
 }
 
 #mubc-header > div:nth-child(2) {
-    margin-top: -220px;
+    margin-top: -290px;
+    margin-bottom: 120px;
     z-index: 999;
     position: relative;
-    width: 350px;
-    height: 220px;
+    width: 290px;
+    height: 80px;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -33,18 +35,18 @@
 
 #mubc-header >  div:nth-child(2) > a >  img:first-child{
     position: relative;
-    margin-top: 0px;
+    margin-top: -30px;
     transition: 0.3s;
-    width: 200px;
-    height: 170px;
+    width: 130px;
+    height: 100px;
 }
 
 #mubc-header >  div:nth-child(2) > a >  img:last-child{
     position: relative;
-    margin-top: -30px;
+    margin-top: -10px;
     transition: 0.3s;
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 25px;
 }
 
 #mubc-header > div:nth-child(2):hover{
@@ -1471,5 +1473,4 @@
     padding-bottom: 30px;
     color: #c70000;
 }
-
 
