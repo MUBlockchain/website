@@ -14,7 +14,7 @@ const MUBCHeader = () => {
                     <img src={require('../images/MUBC Logo Big Letters (vector) copy.png')} alt="Logo"/>
                 </Link>
             </div>
-            <Particles height="250px" params={{
+            <Particles height="125px" params={{
                 particles: {
                     "number": {
                         "value": 40
