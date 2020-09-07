@@ -1,26 +1,53 @@
 import React from 'react'
-import MUBCEventRow from "../components/MUBCEventRow";
-import SEO from "../components/seo";
-import MUBCHeader from "../components/MUBCHeader";
-import MUBCNavbar from "../components/MUBCNavbar";
+import graphql from 'gatsby'
+import Img from 'gatsby-image'
+import MUBCEventRow from "../components/MUBCEventRow"
+import SEO from "../components/seo"
+import MUBCHeader from "../components/MUBCHeader"
+import MUBCNavbar from "../components/MUBCNavbar"
+
+let data = require('../data/events.json')
+let path = require.context('../images/')
+
+let imgQuery = (src) => {
+    return graphql`
+        file(relativePath: { eq "images/${src}" }) {
+            childSharpImage {
+                fixed(width: 250, height: 250) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+    `
+}
 
 const FallEvents = () => {
+    debugger
+    let events = []
+    for (let i = 0; i < data.length; i++) {
+        let event = <MUBCEventRow
+            date={data[i].date}
+            title={data[i].title}
+            body={data[i].description}
+            links={data[i].link}
+            image={<Img
+                className="event-photo"
+                fixed=""
+            />
+            }
+        />
+        events.push(event)
+    }
+
     return (
         <div>
-            <SEO title="Fall 2020" description="Miami University Blockchain Club schedule of Fall 2020 events"/>
-            <MUBCHeader/>
-            <MUBCNavbar/>
+            <SEO title="Fall 2020" description="Miami University Blockchain Club schedule of Fall 2020 events" />
+            <MUBCHeader />
+            <MUBCNavbar />
             <div className="fall-2020">
                 <h1>Fall 2020 Schedule</h1>
-                <hr className="divider"/>
-                <MUBCEventRow date={'15 SEP'} title={'Info Night #1'} body={'Test body'} links={'https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content'} image={<img src={require('../images/logo.png')} alt="Logo"/>}/>
-                <MUBCEventRow date={'16 SEP'} title={'Info Night #2'}/>
-                <MUBCEventRow date={'23 SEP'} title={'Workshop #1: Build and Deploy a Supply Chain dApp'}/>
-                <MUBCEventRow date={'8 OCT'} title={'Crypto Bull Market v2: How to Yield Farm'}/>
-                <MUBCEventRow date={'22 OCT'} title={'Blockchain: The Antidote to Mail-in Ballot Fraud'}/>
-                <MUBCEventRow date={'29 OCT'} title={'Automating Compliance and Financial Auditing with Blockchain'}/>
-                <MUBCEventRow date={'5 NOV'} title={'Where and When to use Emerging Techonologies in Your Business'}/>
-                <MUBCEventRow date={'29 OCT'} title={'Workshop #2: Blockathon Preparation'}/>
+                <hr className="divider" />
+                {events}
             </div>
         </div>
     )
