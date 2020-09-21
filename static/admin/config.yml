@@ -1,7 +1,8 @@
 backend:
-  name: test-repo
+  name: github
+  repo: MUBlockchain/website
 
-media_folder: statis/assets
+media_folder: static/assets
 public_folder: assets
 collections:
   - name: blog
