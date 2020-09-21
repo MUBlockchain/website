@@ -1489,3 +1489,24 @@
     color: #c70000;
 }
 
+.blog__post {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+.blog__image {
+    margin-top: 20px;
+}
+
+/* Blog Post Container */
+
+.blog-post {
+    text-align: center;
+    margin-top: 50px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+

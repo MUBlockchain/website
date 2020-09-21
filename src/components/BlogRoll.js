@@ -11,7 +11,7 @@ const BlogRoll = (props) => {
         <div className="columns is-multiline">
             {posts &&
             posts.map(({node: post}) => (
-                <div className="is-parent column is-6" key={post.id}>
+                <div className="blog__post" key={post.id}>
                     <article
                         className={`blog-list-item tile is-child box notification ${
                             post.frontmatter.featuredpost ? 'is-featured' : ''
@@ -33,7 +33,8 @@ const BlogRoll = (props) => {
                         </header>
                         <p>
                             {post.excerpt}
-                            <Img fixed={post.frontmatter.featuredImage.childImageSharp.fixed} />
+                            <br/>
+                            <Img className="blog__image" fixed={post.frontmatter.featuredImage.childImageSharp.fixed} />
                             <br/>
                             <br/>
                             <Link className="button" to={post.frontmatter.path}>
@@ -66,6 +67,7 @@ export default () => (
             node {
               excerpt(pruneLength: 400)
               frontmatter {
+              path
                 title
                 date(formatString: "MMMM DD, YYYY")
                 description
