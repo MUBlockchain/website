@@ -5,8 +5,8 @@ backend:
 media_folder: static/assets
 public_folder: assets
 collections:
-  - name: blog
-    label: Blog
+  - label: blog
+    name: Blog
     folder: static/assets/blog
     create: true
     fields:
@@ -14,8 +14,8 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-  - name: Schedule
-    label: schedule
+  - label: schedule
+    name: Schedule
     folder: static/assets/schedule
     create: true
     fields:
