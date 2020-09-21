@@ -19,6 +19,8 @@ const MUBCNavbar = () => {
                         </NavDropdown>
                         <Link activeClassName="navbar__selection__active" className="navbar__selection"
                             to="/affiliations">Affiliations</Link>
+                        <Link activeClassName="navbar__selection__active" className="navbar__selection"
+                              to="/blog">Blog</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

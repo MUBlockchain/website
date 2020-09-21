@@ -1474,3 +1474,18 @@
     color: #c70000;
 }
 
+/* MUBC Blog */
+
+.blog {
+    text-align: center;
+}
+
+.blog > h2{
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #c70000;
+}
+
