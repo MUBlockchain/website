@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {Link, graphql, StaticQuery} from 'gatsby'
 import Img from 'gatsby-image'
+import { Box } from '@material-ui/core'
 
 const BlogRoll = (props) => {
     const {data} = props
@@ -11,37 +12,37 @@ const BlogRoll = (props) => {
         <div className="columns is-multiline">
             {posts &&
             posts.map(({node: post}) => (
-                <div className="blog__post" key={post.id}>
-                    <article
-                        className={`blog-list-item tile is-child box notification ${
+                <div key={post.id}>
+                    <Box boxShadow={20}
+                        className={`blog__post ${
                             post.frontmatter.featuredpost ? 'is-featured' : ''
                         }`}
                     >
-                        <header>
-                            <p className="post-meta">
-                                <Link
-                                    className="title has-text-primary is-size-4"
-                                    to={post.frontmatter.path}
-                                >
-                                    {post.frontmatter.title}
-                                </Link>
-                                <span> &bull; </span>
+                        <div className="blog__post-left">
+                            <h3><Link
+                                className="title has-text-primary is-size-4"
+                                to={post.frontmatter.path}
+                            >
+                                {post.frontmatter.title}
+                            </Link></h3>
+                            <p>
                                 <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
                     </span>
                             </p>
-                        </header>
-                        <p>
+                            <hr className="blog__post-divider"/>
+                            <p className="blog__post-excerpt">
                             {post.excerpt}
-                            <br/>
-                            <Img className="blog__image" fixed={post.frontmatter.featuredImage.childImageSharp.fixed} />
-                            <br/>
-                            <br/>
+                            </p>
                             <Link className="button" to={post.frontmatter.path}>
                                 Keep Reading →
                             </Link>
-                        </p>
-                    </article>
+                        </div>
+                            <div className="blog__post-right">
+                            <Img className="blog__image" fixed={post.frontmatter.featuredImage.childImageSharp.fixed} />
+                            <p>Alt Text</p>
+                            </div>
+                    </Box>
                 </div>
             ))}
         </div>
@@ -65,7 +66,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 300)
               frontmatter {
               path
                 title
@@ -73,7 +74,7 @@ export default () => (
                 description
                 featuredImage {
           childImageSharp {
-            fixed(width: 700, height: 400) {
+            fixed {
       ...GatsbyImageSharpFixed
     }
           }
