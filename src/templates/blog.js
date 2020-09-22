@@ -7,15 +7,18 @@ export default function Template({
                                  }) {
     const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, html } = markdownRemark
+    console.log("HTML: ", html)
     return (
         <div className="blog-post__container">
             <MUBCHeader />
             <MUBCNavbar />
             <div className="blog-post">
-                <h1>Title: {frontmatter.title}</h1>
-                <h2>Date: {frontmatter.date}</h2>
+                <div className="blog-post__header">
+                <h1 className="blog-post__title">{frontmatter.title}</h1>
+                <h2 className="blog-post__date">Written: {frontmatter.date}</h2>
+                </div>
                 <div
-                    className="blog-post-content"
+                    className="blog-post__content"
                     dangerouslySetInnerHTML={{ __html: html }}
                 />
             </div>

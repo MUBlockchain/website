@@ -1563,10 +1563,28 @@
 /* Blog Post Container */
 
 .blog-post {
-    text-align: center;
+    text-align: left;
     margin-top: 50px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.blog-post__title {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.blog-post__date {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 50%;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.blog-post__content > h3 {
+    margin-top: 45px;
+    margin-bottom: 20px;
 }
 
