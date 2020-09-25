@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 import { Box } from '@material-ui/core'
 
 const BlogRoll = (props) => {
+    debugger
     const { data } = props
     const { edges: posts } = data.allMarkdownRemark
     console.log("Data: ", data)
@@ -39,7 +40,7 @@ const BlogRoll = (props) => {
                             </Link>
                             </div>
                             <div className="blog__post-right">
-                                <Img className="blog__image" fixed={post.frontmatter.featuredImage.childImageSharp.fixed} />
+                                <Img className="blog__image" fixed={post.frontmatter.thumbnail.childImageSharp.fixed} />
                                 <p>Alt Text</p>
                             </div>
                         </Box>
@@ -72,7 +73,7 @@ export default () => (
                 title
                 date(formatString: "MMMM DD, YYYY")
                 description
-                featuredImage {
+                thumbnail {
                   childImageSharp {
                   fixed {
                     ...GatsbyImageSharpFixed
