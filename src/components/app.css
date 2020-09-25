@@ -1474,3 +1474,117 @@
     color: #c70000;
 }
 
+/* MUBC Blog */
+
+.blog {
+    text-align: center;
+}
+
+.blog > h2{
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #c70000;
+}
+
+.blog__post {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #E5E5E5;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.blog__post > div > a, .blog__post > div > h3 >  a {
+    color: #c70000;
+}
+
+.blog__post-left {
+    width: 450px;
+}
+
+.blog__post-right {
+    width: 450px;
+}
+
+.blog__post-excerpt {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.blog__post-divider {
+    width: 90%;
+    height: 1.5px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.blog__image {
+    position: relative;
+ width: 90% !important;
+    height: 200px !important;
+}
+
+@media (max-width: 1574px) {
+    .blog__post-left {
+        width: 350px;
+    }
+    .blog__post-right {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1233px) {
+    .blog__post-right {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1003px) {
+    .blog__post-right {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .blog__post {
+        width: 85%;
+    }
+}
+
+/* Blog Post Container */
+
+.blog-post {
+    text-align: left;
+    margin-top: 50px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-post__title {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.blog-post__date {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 50%;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.blog-post__content > h3 {
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
