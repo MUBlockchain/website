@@ -2,7 +2,7 @@ backend:
   name: github
   repo: MUBlockchain/website
 
-media_folder: static/assets
+media_folder: static/assets/images
 collections:
   - label: blog
     name: Blog
@@ -12,12 +12,7 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
-      - label: Featured Image
-        name: thumbnail
-        widget: image
-        media_library: 
-          config:
-            multiple: false
+      - { name: thumbnail, label: Featured image, widget: image}
       - { name: body, label: Body, widget: markdown }
   - label: schedule
     name: Schedule
@@ -27,10 +22,5 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
-      - label: Featured Image
-        name: thumbnail
-        widget: image
-        media_library: 
-          config:
-            multiple: false
+      - { name: thumbnail, label: Featured image, widget: image}
       - { name: body, label: Body, widget: markdown }

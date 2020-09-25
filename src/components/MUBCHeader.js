@@ -9,9 +9,9 @@ const MUBCHeader = () => {
             </div>
             <div>
                 <Link to="/">
-                    <img src={require('../images/MUBC Logo Big Letters (vector) copy 2.png')} alt="Logo"/>
+                    <img src={require('../..//static/assets/images/MUBC Logo Big Letters (vector) copy 2.png')} alt="Logo"/>
                     <br/>
-                    <img src={require('../images/MUBC Logo Big Letters (vector) copy.png')} alt="Logo"/>
+                    <img src={require('../..//static/assets/images/MUBC Logo Big Letters (vector) copy.png')} alt="Logo"/>
                 </Link>
             </div>
             <Particles height="125px" params={{
