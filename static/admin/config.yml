@@ -2,7 +2,8 @@ backend:
   name: github
   repo: MUBlockchain/website
 
-media_folder: static/assets/images
+media_folder: static/assets/images/
+public_folder: /assets/images/
 collections:
   - label: blog
     name: Blog
