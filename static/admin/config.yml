@@ -3,7 +3,6 @@ backend:
   repo: MUBlockchain/website
 
 media_folder: static/assets
-public_folder: assets
 collections:
   - label: blog
     name: Blog
@@ -13,6 +12,12 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - label: Featured Image
+        name: thumbnail
+        widget: image
+        media_library: 
+          config:
+            multiple: false
       - { name: body, label: Body, widget: markdown }
   - label: schedule
     name: Schedule
@@ -20,6 +25,12 @@ collections:
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: title, label: Title }
       - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - label: Featured Image
+        name: thumbnail
+        widget: image
+        media_library: 
+          config:
+            multiple: false
       - { name: body, label: Body, widget: markdown }
