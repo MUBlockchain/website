@@ -9,9 +9,10 @@ collections:
     folder: static/assets/blog
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
+      - { name: path, label: Path }
       - { name: title, label: Title }
+      - { name: description, label: Description for SEO }
       - { name: thumbnail, label: Featured image, widget: image}
       - { name: body, label: Body, widget: markdown }
   - label: schedule
@@ -19,8 +20,9 @@ collections:
     folder: static/assets/schedule
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
+      - { name: path, label: Path }
       - { name: title, label: Title }
+      - { name: description, label: Description for SEO }
       - { name: thumbnail, label: Featured image, widget: image}
       - { name: body, label: Body, widget: markdown }
