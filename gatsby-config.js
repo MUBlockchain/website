@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Miami University Blockchain Club`,
     description: `Miami University Blockchain Club Website`,
-    image: `src/images/logo.png`,
+    image: `/static/assets/images/logo.png`,
     author: `Ian Brighton`,
   },
   plugins: [
@@ -42,7 +42,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/MUBC Logo Big Letters (vector) copy 2.png`, // This path is relative to the root of the site.
+        icon: `/static/assets/images/MUBC Logo Big Letters (vector) copy 2.png`, // This path is relative to the root of the site.
       },
       resolve: `gatsby-source-filesystem`,
       options: {
