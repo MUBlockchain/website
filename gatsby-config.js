@@ -6,7 +6,13 @@ module.exports = {
     author: `Ian Brighton`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/static/assets`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,7 +26,7 @@ module.exports = {
         name: `blog`,
         path: `${__dirname}/static/assets/blog`,
       },
-    }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -56,13 +62,10 @@ module.exports = {
       },
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/static/assets`,
+        path: `${__dirname}/static/assets/`,
         name: `markdown-pages`,
       },
     },
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
+    `gatsby-plugin-react-helmet`
+  ]
 }

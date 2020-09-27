@@ -11,7 +11,7 @@ const Blog = () => {
             <MUBCHeader />
             <MUBCNavbar/>
             <h2>MUBC Blog</h2>
-            {/* <BlogRoll /> */}
+            <BlogRoll />
         </div>
     )
 }

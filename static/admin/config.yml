@@ -2,27 +2,94 @@ backend:
   name: github
   repo: MUBlockchain/website
 
-media_folder: static/assets/images/
-public_folder: /assets/images/
+media_folder: assets/images
+public_folder: /images
+
 collections:
+  - label: landing
+    name: Landing Page
+    folder: content/pages/landing
+    delete: false
+    fields: 
+      - { 
+        label: banner,
+        name: Banner,
+        fields:
+          - { label: body, name: Body, widget: markdown }
+          - { label: icon, name: Icon, widget: image }
+          - { label: link, name: Link, widget: string }
+       }
+       - {
+         label: spotlight,
+         name: Spotlight,
+         fields: 
+          - { label: text, name: Text, widget: string }
+          - { label: image, name: Image, widget: image }
+          - { label: link, name: Link, widget: string }
+       }
+       - {
+         label: carousel,
+         name: Carousel,
+         widget: list,
+         create: true,
+         fields:
+          - { label: text, name: Text, widget: string }
+          - { label: image, name: Image, widget: image }
+          - { label: link, name: Link, widget: string }
+       }
+  - label: team
+    name: Team
+    widget: list
+    folder: content/team
+    create: true
+    fields:
+      - { label: name, name: Name, widget: string }
+      - { label: linkedIn, name: Linkedin, widget: string }
+      - { label: email, name: Email, widget: string }
+      - { label: image, name: Image, widget: image }
+      - { label: biography, name: Bio, widget: markdown }
+      - { label: active, name: Active, widget: boolean }
+      - { label: year, name: Year, widget: string }
+      - { label: advisor, name: Advisor, widget: boolean }
+  - label: affiliates
+    name: Affiliates
+    widget: list
+    folder: content/affiliates
+    create: true
+    fields:
+      - { label: name, name: Name, widget: string }
+      - { label: url, name: URL, widget: string }
+      - { label: instagram, name: Instagram, widget: string }
+      - { label: twitter, name: Twitter, widget: string }
+      - { label: linkedin, name: LinkedIn, widget: string }
+      - { label: description, name: Description, widget: string }
+      - { label: image, name: Image, widget: image }
   - label: blog
     name: Blog
-    folder: static/assets/blog
+    widget: list
+    folder: content/blog
     create: true
     fields:
       - { name: date, label: Date, widget: datetime }
-      - { name: path, label: Path }
-      - { name: title, label: Title }
+      - { name: path, label: Path, widget: string }
+      - { name: title, label: Title, widget: string }
+      - label: author
+        name: Author
+        fields:
+          - { label: name, name: Name, widget: string }
+          - { label: title, name: Title, widget: string }
+          - { label: image, name: Image, widget: image }
+          - { label: linkedin, name: LinkedIn, widget: string }
       - { name: description, label: Description for SEO }
       - { name: thumbnail, label: Thumbnail Image, widget: image }
       - { name: body, label: Body, widget: markdown }
   - label: schedule
     name: Schedule
-    folder: static/assets/schedule
+    widget: list
+    folder: content/schedule
     create: true
     fields:
       - { name: date, label: Date, widget: datetime }
-      - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: description, label: Description for SEO }
       - { name: thumbnail, label: Thumbnail Image, widget: image }

@@ -48,7 +48,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
         reporter.panicOnBuild(`Error while running GraphQL query.`);
         return
     }
-
+    console.log("PATH: ", node.frontmatter.path)
     result.data.allMarkdownRemark.edges.forEach(({node}) => {
         createPage({
             path: node.frontmatter.path,
