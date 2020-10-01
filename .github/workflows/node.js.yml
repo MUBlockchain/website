@@ -22,3 +22,10 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - name: Deploy to Apache with SSH
+      uses: fifsky/ssh-action@master
+      with:
+        command: sh ci.sh
+        host: ${{ secrets.CI_HOST }}
+        user: "ci"
+        key: ${{ secrets.CI_SSH_KEY }}
