@@ -18,7 +18,7 @@ const IndexPage = () => (
             <div>
                 <div>
                     <h1>MU BLOCKCHAIN</h1>
-                    <a href="https://muhub.campuslabs.com/engage/organization/blockchain/roster">Get in Touch</a>
+                    <a href="https://muhub.campuslabs.com/engage/organization/blockchain/roster">Get in Touch!</a>
                 </div>
             </div>
         </div>
