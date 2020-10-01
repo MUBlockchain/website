@@ -23,9 +23,9 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     - name: Deploy to Apache with SSH
-      uses: fifsky/ssh-action@master
+      uses: appleboy/ssh-action@master
       with:
-        command: sh ci.sh
+        script: sh ci.sh
         host: ${{ secrets.CI_HOST }}
-        user: "ci"
+        username: "ci"
         key: ${{ secrets.CI_SSH_KEY }}
