@@ -22,7 +22,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - name: Deploy to Apache with SSH
+    - name: Deploy Website to Apache (https://mubc.io) with SSH
       uses: appleboy/ssh-action@master
       with:
         script: sh ci.sh
