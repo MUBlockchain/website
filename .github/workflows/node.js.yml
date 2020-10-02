@@ -25,6 +25,7 @@ jobs:
     - name: Deploy Website to Apache (https://mubc.io) with SSH
       uses: appleboy/ssh-action@master
       with:
+        node-version: 14.13.0
         script: sh ci.sh
         host: ${{ secrets.CI_HOST }}
         username: "ci"
