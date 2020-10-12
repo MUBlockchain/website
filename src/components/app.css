@@ -1598,3 +1598,32 @@
     color: black;
 }
 
+/* Schedule Post */
+
+.schedule-post {
+    text-align: left;
+    margin-top: 50px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.schedule-post__title {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.schedule-post__date {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 50%;
+    margin-top: -50px;
+}
+
+.schedule-post__body {
+    text-align: center;
+    margin-top: 50px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
