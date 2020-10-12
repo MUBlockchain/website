@@ -1588,3 +1588,13 @@
     margin-bottom: 20px;
 }
 
+/* Schedule */
+.schedule__link {
+    color: black;
+}
+
+.schedule__link:hover {
+    text-decoration: none;
+    color: black;
+}
+

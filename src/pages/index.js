@@ -7,6 +7,7 @@ import MUBCHeader from "../components/MUBCHeader"
 import MUBCNavbar from "../components/MUBCNavbar"
 import MUBCFooter from "../components/MUBCFooter"
 import MUBCEventRow from "../components/MUBCEventRow";
+import ScheduleRoll from "../components/ScheduleRoll";
 
 
 const IndexPage = () => (
@@ -26,6 +27,7 @@ const IndexPage = () => (
                 <h1>Fall 2020 Schedule</h1>
                 <hr className="divider"/>
                 <h5>Click on a row to view details!</h5>
+                <ScheduleRoll />
                 <MUBCEventRow 
                     date={'15 SEP'}
                     title={'Info Night #1'}

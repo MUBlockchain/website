@@ -6,6 +6,7 @@ module.exports = {
     author: `Ian Brighton`,
   },
   plugins: [
+    `gatsby-plugin-modal-routing`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -46,7 +47,7 @@ module.exports = {
       },
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/blog`,
+        path: `${__dirname}/markdown`,
         name: `markdown-pages`,
       },
     },
