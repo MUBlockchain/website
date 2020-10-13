@@ -2,7 +2,7 @@
 path: /post2
 title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
-featuredImage: ../hello-world/salty_egg.jpg
+featuredImage: /img/salty_egg.jpg
 description: "test"
 ---
 

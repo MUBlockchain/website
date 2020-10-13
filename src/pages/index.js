@@ -33,63 +33,63 @@ const IndexPage = () => (
                     title={'Info Night #1'}
                     body={'Wondering if you should care what Blockchain is? Blockchain and smart contracts, AKA the internet of value, is at the bleeding edge of functionality we can capture from the decade of the smartphone. Wondering what Blockchain is? We’ll run you through fantastic online resources built by our partners in the Midwest Blockchain Consortium to jumpstart your knowledge within the industry. Wondering what MU Blockchain Club does, and how to take advantage of our opportunities? We’ll run you through our semester schedule, the 2020 Blockathon, the MUBC Incentive App, and professional placement through the Midwest Blockchain Consortium. Wondering how to get hands-on experience developing around a blockchain? We’ll run you through the MUBC Incentive App.'} links={'https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content'}
                     links={'https://www.tinyurl.com/mubc-infonight-1'}
-                    image={<img src={require('../images/info.png')} alt="Info Night 1"/>}
+                    image={<img src={require('../../static/img/info.png')} alt="Info Night 1"/>}
                 />
                 <MUBCEventRow 
                     date={'16 SEP'}
                     title={'Info Night #2'}
                     body={'Wondering if you should care what Blockchain is? Blockchain and smart contracts, AKA the internet of value, is at the bleeding edge of functionality we can capture from the decade of the smartphone. Wondering what Blockchain is? We’ll run you through fantastic online resources built by our partners in the Midwest Blockchain Consortium to jumpstart your knowledge within the industry. Wondering what MU Blockchain Club does, and how to take advantage of our opportunities? We’ll run you through our semester schedule, the 2020 Blockathon, the MUBC Incentive App, and professional placement through the Midwest Blockchain Consortium. Wondering how to get hands-on experience developing around a blockchain? We’ll run you through the MUBC Incentive App.'}
                     links={'https://www.tinyurl.com/mubc-infonight-2'}
-                    image={<img src={require('../images/info.png')} alt="Info Night 2"/>}
+                    image={<img src={require('../../static/img/info.png')} alt="Info Night 2"/>}
                     />
                 <MUBCEventRow
                     date={'23 SEP'}
                     title={'Workshop #1: Build and Deploy a Supply Chain dApp'}
                     body={'Work with skilled developers from the renowned Ethereum development tool Truffle to deploy and test a full supply chain app! Code repository will be provided, and MUBC’s team will serve as TA’s as well. If you’re looking to master the competition at Blockathon 2020, this workshop will give you a technical edge.'}
                     links={'https://www.trufflesuite.com/'}
-                    image={<img src={require('../images/truffle.png')} alt="Workshop #1 with Truffle" />}
+                    image={<img src={require('../../static/img/truffle.png')} alt="Workshop #1 with Truffle" />}
                 />
                 <MUBCEventRow
                     date={'8 OCT'}
                     title={'Crypto Bull Market v2: How to Yield Farm'}
                     body={'Join the Midwest Blockchain Consortium to dive into the incredible world of decentralized finance, and the subsequent rise of yield farming these DeFi protocols. Finally, we will explore how anyone can start yield farming significant 50%+ APY returns from the Yearn Finance protocol. Tickets will be sold for $25 on eventbrite. 25 Dai (Dollar stablecoin) will be provided to you at the time of the workshop if you attend, allowing you to follow along. Alternatively, you can provide your own Dai or choose not to invest and watch instead!'}
                     links={'https://www.yearn.finance'}
-                    image={<img src={require('../images/yearn.png')} alt="How to Yield Farm: Yearn Finance" />}    
+                    image={<img src={require('../../static/img/yearn.png')} alt="How to Yield Farm: Yearn Finance" />}    
                 />
                 <MUBCEventRow
                     date={'22 OCT'}
                     title={'Blockchain: The Antidote to Mail-in Ballot Fraud'}
                     body={'Join Pete Martin, CEO of Blockchain-powered voting platform Votem, to discuss the current pitfalls in how our elections handle the voting procedure, and how blockchain has the potential to guarantee each constituent a single confidential vote while allowing verification by any necessary party.'}
                     links={'https://www.votem.com'}
-                    image={<img src={require('../images/votem.png')} alt="Mail Fraud Prevention with Votem" />}    
+                    image={<img src={require('../../static/img/votem.png')} alt="Mail Fraud Prevention with Votem" />}    
                 />
                 <MUBCEventRow
                     date={'29 OCT'}
                     title={'Automating Compliance and Financial Auditing with Blockchain'}
                     body={'Learn how integrating business logic into smart contracts can provide immutable records of chain of custody. More details to come!'}
-                    image={<img src={require('../images/audit.jpg')} alt="Auditing with Blockchain" />}
+                    image={<img src={require('../../static/img/audit.jpg')} alt="Auditing with Blockchain" />}
                 />
                 <MUBCEventRow
                     date={'5 NOV'}
                     title={'Where and When to use Emerging Techonologies in Your Business'}
                     body={'Learn where technologies like AI, Cloud, Internet of Things, 3D printing, and blockchain can intersect with real business use cases. More details to come!'}
-                    image={<img src={require('../images/emerging.jpeg')} alt="Workshop #1" />}
+                    image={<img src={require('../../static/img/emerging.jpeg')} alt="Workshop #1" />}
                 />
                 <MUBCEventRow
                     date={'19 NOV'}
                     title={'Workshop #2: Blockathon Preparation'}
                     body={'More info to come!'}
-                    image={<img src={require('../images/truffle.png')} alt="Workshop #2" />}    
+                    image={<img src={require('../../static/img/truffle.png')} alt="Workshop #2" />}    
                 />
             </div>
         <div id="mubc-home__sessions">
             <h1>VIRTUAL BLOCKCHAIN CONFERENCE: FEATURED SESSIONS</h1>
             <hr className="divider"/>
             <div id="mubc-home__virtual-blockchain-conference">
-                <img className="mubc-home__sessions__carousel__image" src={require("../images/slideshow_1.jpg")}/>
-                <img className="mubc-home__sessions__carousel__image" src={require("../images/slideshow_2.jpg")}/>
-                <img className="mubc-home__sessions__carousel__image" src={require("../images/slideshow_3.jpg")}/>
-                <img className="mubc-home__sessions__carousel__image" src={require("../images/slideshow_4.jpg")}/>
+                <img className="mubc-home__sessions__carousel__image" src={require("../../static/img/slideshow_1.jpg")}/>
+                <img className="mubc-home__sessions__carousel__image" src={require("../../static/img/slideshow_2.jpg")}/>
+                <img className="mubc-home__sessions__carousel__image" src={require("../../static/img/slideshow_3.jpg")}/>
+                <img className="mubc-home__sessions__carousel__image" src={require("../../static/img/slideshow_4.jpg")}/>
             </div>
             <div id="mubc-home__conference-link">
                 <a href="http://virtualblockchain.io/">Visit the Virtual Blockchain Conference Site</a>
@@ -108,7 +108,7 @@ const IndexPage = () => (
                 <h1>About Us</h1>
                 <hr className="divider"/>
                 <div className="mubc-home__about-us__container">
-                    <div><img src={require('../images/about_1.jpg')} alt="About 1"/></div>
+                    <div><img src={require('../../static/img/about_1.jpg')} alt="About 1"/></div>
                     <div>
                         <h2>Organization Mission Statement</h2>
                         <p>The purpose of the Miami University Blockchain Club (MUBC) is to actively facilitate
@@ -128,7 +128,7 @@ const IndexPage = () => (
                             fit, or simply fill out the form below. Also, check us out on the hub!</p>
                     </div>
                     <div>
-                        <img src={require('../images/about_2.jpg')} alt="About 2"/>
+                        <img src={require('../../static/img/about_2.jpg')} alt="About 2"/>
                     </div>
                 </div>
             </div>

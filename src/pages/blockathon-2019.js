@@ -10,7 +10,7 @@ const Blockathon_2019 = () => {
             <SEO title="Blockathon 2019" description="Miami University Blockchain Club 2019 Blockathon information"/>
             <MUBCHeader/>
             <MUBCNavbar/>
-            <img src={require('../images/piggy_bank.jpg')} alt="Piggy Bank"/>
+            <img src={require('../../static/img/piggy_bank.jpg')} alt="Piggy Bank"/>
             <h1>2019 MU BLOCKATHON</h1>
             <hr className="divider"/>
             <div id="blockathon-2019__description">
