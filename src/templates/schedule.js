@@ -27,7 +27,7 @@ export default function Template({
                     <br/>
                     <br/>
                 <h4>Links: </h4>
-                <a href={frontmatter.link}>frontmatter.link</a>
+                <a href={frontmatter.link}>{frontmatter.link}</a>
                 </div>
             </div>
         </div>

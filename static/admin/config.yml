@@ -1,17 +1,31 @@
 backend:
   name: github
   repo: MUBlockchain/website
+  branch: schedule-implementation
 
-media_folder: static/assets
-public_folder: assets
+media_folder: static/img
+public_folder: img
 
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: src/markdown/blog
     create: true
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - { name: featuredImage, label: Image, widget: image }
+  - name: schedule
+    label: Event Schedule
+    folder: src/markdown/schedule
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: description, label: Event Description, widget: markdown }
+      - { name: eventDate, label: Event Date, widget: string }
+      - { name: link, label: Link, widget: string }
+      - { name: featuredImage, label: Image, widget: image }

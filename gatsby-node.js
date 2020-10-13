@@ -30,7 +30,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
     const blogResult = await graphql(`
     {
       allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/markdown/blog/"  }}
+      filter: {fileAbsolutePath: {regex: "src/markdown/blog/"  }}
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
@@ -48,7 +48,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
     const scheduleResult = await graphql(`
     {
       allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/markdown/schedule/"  }}
+      filter: {fileAbsolutePath: {regex: "src/markdown/schedule/"  }}
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
