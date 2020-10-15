@@ -16,7 +16,7 @@ const LeadershipTeam = () => (
     <hr className="divider"/>
     <div className="leadership-team__row">
       <div className="leadership-team__column">
-        <img src={require("../images/jack_gilcrest.jpeg")} alt="Jack Gilcrest"/>
+        <img src={require("../../static/img/jack_gilcrest.jpeg")} alt="Jack Gilcrest"/>
         <p>Jack Gilcrest</p>
         <p>President</p>
         <p>Jack Gilcrest is the current President of Miami University Blockchain Club. Stepping up from his role as VP
@@ -29,7 +29,7 @@ const LeadershipTeam = () => (
         <a href="http://%20https//www.linkedin.com/in/jack-gilcrest/">LinkedIn</a>
       </div>
       <div className="leadership-team__column">
-        <img src={require("../images/alexandra_bartkoske.jpg")} alt="Alexandra Bartkoske"/>
+        <img src={require("../../static/img/alexandra_bartkoske.jpg")} alt="Alexandra Bartkoske"/>
         <p>Alexandra Bartkoske</p>
         <p>VP of Finance</p>
         <p>Alexandra Bartkoske is a junior finance major and English minor from the Chicago suburbs. Alexandra has
@@ -43,7 +43,7 @@ const LeadershipTeam = () => (
         <a href="https://www.linkedin.com/in/alexandra-bartkoske/">LinkedIn</a>
       </div>
       <div className="leadership-team__column">
-        <img src={require('../images/alex_stan.jpg')} alt="Alex Stan"/>
+        <img src={require('../../static/img/alex_stan.jpg')} alt="Alex Stan"/>
         <p>Alex Stan</p>
         <p>VP of Professional Development</p>
         <p>Alex Stan is a sophomore Accountancy major in the Farmer School of Business. Alex is very passionate about
@@ -60,7 +60,7 @@ const LeadershipTeam = () => (
     </div>
     <div className="leadership-team__row">
       <div className="leadership-team__column">
-        <img src={require("../images/peter_cook.jpg")} alt="Peter Cooke"/>
+        <img src={require("../../static/img/peter_cook.jpg")} alt="Peter Cooke"/>
         <p>Peter Cooke</p>
         <p>VP of Projects</p>
         <p>Peter Cooke is a Junior Computer Science Major and has worked on multiple large-scale projects. Peter
@@ -72,7 +72,7 @@ const LeadershipTeam = () => (
         <a href="https://www.linkedin.com/in/peter-cooke-697853174/">LinkedIn</a>
       </div>
       <div className="leadership-team__column">
-        <img src={require("../images/allie_blackburn.jpg")} alt="Allie Blackburn"/>
+        <img src={require("../../static/img/allie_blackburn.jpg")} alt="Allie Blackburn"/>
         <p>Allie Blackburn</p>
         <p>Director of Social Media</p>
         <p>My curiosity allows me to develop skills quickly in new environments which has allowed me to grow in
@@ -88,7 +88,7 @@ const LeadershipTeam = () => (
         <a href="https://www.linkedin.com/in/allisonblackburn22/">LinkedIn</a>
       </div>
       <div className="leadership-team__column">
-        <img src={require("../images/torsten_overbeck.jpg")} alt="Torsten Overbeck"/>
+        <img src={require("../../static/img/torsten_overbeck.jpg")} alt="Torsten Overbeck"/>
         <p>Torsten Overbeck</p>
         <p>VP of Education</p>
         <p>Torsten Overbeck is a junior Computer Science major with a minor in Computer Engineering. He has a passion
@@ -105,7 +105,7 @@ const LeadershipTeam = () => (
     </div>
     <div className="leadership-team__row">
       <div className="leadership-team__column">
-        <img src={require("../images/sam_groth.jpg")} alt="Sam Groth"/>
+        <img src={require("../../static/img/sam_groth.jpg")} alt="Sam Groth"/>
         <p>Sam Groth</p>
         <p>VP of Recruitment</p>
         <p>Currently a sophomore at Miami University studying Computer Science
@@ -115,7 +115,7 @@ const LeadershipTeam = () => (
         <a href="https://www.linkedin.com/in/sam-groth-b00862174/">LinkedIn</a>
       </div>
       <div className="leadership-team__column">
-        <img src={require("../images/adrian_czajka.jpg")}/>
+        <img src={require("../../static/img/adrian_czajka.jpg")}/>
         <p>Adrian Czajka</p>
         <p>VP of Public Relations</p>
         <p>Adrian Czajka is a junior Software Engineering Major, and Finance Minor from Cleveland, Ohio. Over the past
@@ -130,7 +130,7 @@ const LeadershipTeam = () => (
         <a href="https://www.linkedin.com/in/adrian-czajka-160b3b180/">LinkedIn</a>
       </div>
       <div className="leadership-team__column">
-        <img src={require("../images/jake_dearth.jpg")}/>
+        <img src={require("../../static/img/jake_dearth.jpg")}/>
         <p>Jake Dearth</p>
         <p>VP of Outreach</p>
         <p>I am a Junior Biology Major at Miami University.
@@ -154,7 +154,7 @@ const LeadershipTeam = () => (
       <hr className="divider"/>
       <div className="leadership-team__row">
         <div className="leadership-team__strategic-advisors__column">
-          <img src={require("../images/arthur_carvalho.jpg")} alt="Dr. Arthur Carvalho"/>
+          <img src={require("../../static/img/arthur_carvalho.jpg")} alt="Dr. Arthur Carvalho"/>
           <p>Dr. Arthur Carvalho</p>
           <p>Academic Advisor </p>
           <p> Dr. Arthur Carvalho is an Assistant Professor of Information Systems and Analytics at Farmer School of
@@ -165,7 +165,7 @@ const LeadershipTeam = () => (
           <a href="https://www.linkedin.com/in/arthurgcarvalho/">LinkedIn</a>
         </div>
         <div className="leadership-team__strategic-advisors__column">
-          <img src={require("../images/ashton_barger.jpg")} alt="Ashton Barger"/>
+          <img src={require("../../static/img/ashton_barger.jpg")} alt="Ashton Barger"/>
           <p>Ashton Barger</p>
           <p>Strategic Advisor </p>
           <p> People, the environment, and technology absolutely fascinate me. They are where my passions lie; through
@@ -189,7 +189,7 @@ const LeadershipTeam = () => (
       </div>
       <div className="leadership-team__row">
         <div className="leadership-team__strategic-advisors__column">
-          <img src={require("../images/jeffrey_w_merhout.jpg")} alt="Jeffrey W. Merhout"/>
+          <img src={require("../../static/img/jeffrey_w_merhout.jpg")} alt="Jeffrey W. Merhout"/>
           <p>Jeffrey W. Merhout</p>
           <p>Academic Advisor</p>
           <p> Jeffrey W. Merhout is an Associate Professor of Information Systems in the Farmer School of Business at
@@ -208,7 +208,7 @@ const LeadershipTeam = () => (
           <a href="https://www.linkedin.com/in/jeff-merhout-b862b82/">LinkedIn</a>
         </div>
         <div className="leadership-team__strategic-advisors__column">
-          <img src={require("../images/patrick_young.jpg")} alt="Patrick Young"/>
+          <img src={require("../../static/img/patrick_young.jpg")} alt="Patrick Young"/>
           <p>Patrick Young</p>
           <p>Strategic Advisor</p>
           <p> Patrick Young, former President of MUBC, founded the organization in August of 2017 with the goal of

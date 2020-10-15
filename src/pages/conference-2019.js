@@ -12,7 +12,7 @@ const Conference_2019 = () => {
             <MUBCHeader/>
             <MUBCNavbar/>
             <div id="conference-2019">
-                <img src={require('../images/conference_banner.jpg')} alt="Piggy Bank"/>
+                <img src={require('../../static/img/conference_banner.jpg')} alt="Piggy Bank"/>
                 <div id="conference-2019__info">
                     <h1>2019 MIAMI UNIVERSITY BLOCKCHAIN CONFERENCE</h1>
                     <hr className="divider"/>
@@ -57,14 +57,14 @@ const Conference_2019 = () => {
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_1.jpg')}
+                                src={require('../../static/img/conference_slideshow_1.jpg')}
                                 alt="First slide"
                             />
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_2.jpg')}
+                                src={require('../../static/img/conference_slideshow_2.jpg')}
                                 alt="Second Slide"
                             />
 
@@ -75,7 +75,7 @@ const Conference_2019 = () => {
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow3.jpg')}
+                                src={require('../../static/img/conference_slideshow3.jpg')}
                                 alt="Third slide"
                             />
 
@@ -86,7 +86,7 @@ const Conference_2019 = () => {
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_4.jpg')}
+                                src={require('../../static/img/conference_slideshow_4.jpg')}
                                 alt="Fourth slide"
                             />
 
@@ -98,7 +98,7 @@ const Conference_2019 = () => {
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_5.jpg')}
+                                src={require('../../static/img/conference_slideshow_5.jpg')}
                                 alt="Fifth slide"
                             />
 
@@ -110,7 +110,7 @@ const Conference_2019 = () => {
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_6.jpg')}
+                                src={require('../../static/img/conference_slideshow_6.jpg')}
                                 alt="Sixth slide"
                             />
 
@@ -121,7 +121,7 @@ const Conference_2019 = () => {
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_7.jpg')}
+                                src={require('../../static/img/conference_slideshow_7.jpg')}
                                 alt="Seventh slide"
                             />
 
@@ -133,14 +133,14 @@ const Conference_2019 = () => {
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_8.jpg')}
+                                src={require('../../static/img/conference_slideshow_8.jpg')}
                                 alt="Eigth slide"
                             />
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_9.jpg')}
+                                src={require('../../static/img/conference_slideshow_9.jpg')}
                                 alt="Ninth slide"
                             />
 
@@ -151,21 +151,21 @@ const Conference_2019 = () => {
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_10.jpg')}
+                                src={require('../../static/img/conference_slideshow_10.jpg')}
                                 alt="Tenth slide"
                             />
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_11.jpg')}
+                                src={require('../../static/img/conference_slideshow_11.jpg')}
                                 alt="Eleventh slide"
                             />
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_12.jpg')}
+                                src={require('../../static/img/conference_slideshow_12.jpg')}
                                 alt="Twelfth slide"
                             />
                             <Carousel.Caption>
@@ -175,7 +175,7 @@ const Conference_2019 = () => {
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_13.jpg')}
+                                src={require('../../static/img/conference_slideshow_13.jpg')}
                                 alt="Thirteenth slide"
                             />
                             <Carousel.Caption>
@@ -186,7 +186,7 @@ const Conference_2019 = () => {
                         <Carousel.Item>
                             <img
                                 className="conference-2019__slideshow_image"
-                                src={require('../images/conference_slideshow_14.jpg')}
+                                src={require('../../static/img/conference_slideshow_14.jpg')}
                                 alt="Fourteenth slide"
                             />
                             <Carousel.Caption>
@@ -207,7 +207,7 @@ const Conference_2019 = () => {
                     <hr className="divider"/>
                     <div>
                         <div>
-                            <img src={require('../images/luke_sully.png')} alt="Luke Sully"/>
+                            <img src={require('../../static/img/luke_sully.png')} alt="Luke Sully"/>
                             <h4>Luke Sully</h4>
                             <p>Luke Sully is founder and CEO of Custody Digital Group, a UK/US digital asset custodian.
                                 CusDG provides an insured, highly secure, institutional-grade custodian service for a
@@ -225,20 +225,20 @@ const Conference_2019 = () => {
                     <hr className="divider"/>
                     <div>
                         <div>
-                            <img src={require('../images/wendy_henry.jpg')} alt="Wendy Henry"/>
+                            <img src={require('../../static/img/wendy_henry.jpg')} alt="Wendy Henry"/>
                             <h4>Wendy Henry</h4>
                             <p> Managing Partner and Blockchain Lead for Government and Public Services at <a
                                 href="https://www2.deloitte.com/us/en.html">Deloitte</a></p>
                             <a href="https://www.linkedin.com/in/wendy-henry-6819b93/">LINKEDIN</a>
                         </div>
                         <div>
-                            <img src={require('../images/vasanthi_chalasani.png')} alt="Vasanthi Chalasani"/>
+                            <img src={require('../../static/img/vasanthi_chalasani.png')} alt="Vasanthi Chalasani"/>
                             <h4>Vasanthi Chalasani</h4>
                             <p>Director of IT & Shared Services at <a href="https://us.pg.com/">P&G</a>. </p>
                             <a href="https://www.linkedin.com/in/vasanthi-chalasani-624138b/">LINKEDIN</a>
                         </div>
                         <div>
-                            <img src={require('../images/chris_berry.png')} alt="Chris Berry"/>
+                            <img src={require('../../static/img/chris_berry.png')} alt="Chris Berry"/>
                             <h4>Chris Berry</h4>
                             <p>Chief of Staff at Ohio Treasurer's Office </p>
                             <a href="https://www.linkedin.com/in/chris-berry-073aa75/">LINKEDIN</a>
@@ -250,7 +250,7 @@ const Conference_2019 = () => {
                     <hr className="divider"/>
                     <div>
                         <div>
-                            <img src={require('../images/charlier_lougheed.jpg')} alt="Charlie Lougheed"/>
+                            <img src={require('../../static/img/charlier_lougheed.jpg')} alt="Charlie Lougheed"/>
                             <h4>Charlie Lougheed</h4>
                             <p> Co-founder and Partner at <a href="https://www.unifyproject.org/">Unify Project</a>.
                                 Managing Director of the Lougheed Initiative.
@@ -258,7 +258,7 @@ const Conference_2019 = () => {
                             <a href="https://www.linkedin.com/in/lougheed/">LINKEDIN</a>
                         </div>
                         <div>
-                            <img src={require('../images/john_squires.jpg')} alt="Block Key Capital"/>
+                            <img src={require('../../static/img/john_squires.jpg')} alt="Block Key Capital"/>
                             <h4>John Squires</h4>
                             <p>Co-Founder of <a href="https://www.finclusivecapital.com/">Finclusive</a>.
 
@@ -266,7 +266,7 @@ const Conference_2019 = () => {
                             <a href="https://www.linkedin.com/in/josquires/">LINKEDIN</a>
                         </div>
                         <div>
-                            <img src={require('../images/michael_hiles.jpg')} alt="Clever Apply"/>
+                            <img src={require('../../static/img/michael_hiles.jpg')} alt="Clever Apply"/>
                             <h4>Michael Hiles</h4>
                             <p>Founder and CEO of <a href="https://10xts.com/">10XTS</a></p>
                             <a href="https://www.linkedin.com/in/michaelhiles/">LINKEDIN</a>
@@ -278,21 +278,21 @@ const Conference_2019 = () => {
                     <hr className="divider"/>
                     <div>
                         <div>
-                            <img src={require('../images/clever_apply.png')} alt="Clever Apply"/>
+                            <img src={require('../../static/img/clever_apply.png')} alt="Clever Apply"/>
                             <h4>CleverApply</h4>
                             <p> CleverApply is working on the College application process to remove inefficiencies for
                                 international students and Colleges, by eliminating redundant fees and services with the
                                 Hyperledger Blockchain.</p>
                         </div>
                         <div>
-                            <img src={require('../images/block_key_capital_logo.png')} alt="Block Key Capital"/>
+                            <img src={require('../../static/img/block_key_capital_logo.png')} alt="Block Key Capital"/>
                             <h4>Block Key Capital</h4>
                             <p>Block Key Capital (BKC) is a US-based research and investment firm dealing exclusively
                                 with the emerging cryptoasset class. Founded by current Miami Students</p>
                             <a href="https://blockkeycapital.io/">Find Out More</a>
                         </div>
                         <div>
-                            <img src={require('../images/blox_logo.png')} alt="Clever Apply"/>
+                            <img src={require('../../static/img/blox_logo.png')} alt="Clever Apply"/>
                             <h4>blOX Consulting</h4>
                             <p>A Student-led Startup for Blockchain Consulting. They plan to help individuals and
                                 startups with research and implmentation of Blockchain Solutions. Founded by Ashton

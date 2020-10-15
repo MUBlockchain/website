@@ -7,7 +7,6 @@ import { Box } from '@material-ui/core'
 const BlogRoll = (props) => {
     const {data} = props
     const {edges: posts} = data.allMarkdownRemark
-
     return (
         <div className="columns is-multiline">
             {posts &&
@@ -62,7 +61,8 @@ export default () => (
         query={graphql`
       query BlogRollQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { order: DESC, fields: [frontmatter___date] },
+          filter: {fileAbsolutePath: {regex: "/markdown/blog/"  }}
         ) {
           edges {
             node {

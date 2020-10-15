@@ -1,17 +1,39 @@
 backend:
   name: github
   repo: MUBlockchain/website
+  branch: master
 
-media_folder: static/assets
-public_folder: assets
+media_folder: static/img
+public_folder: /img
 
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: src/markdown/blog
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: path, label: Path, hint: "eg. '/blog/my-blog'" }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - { name: featuredImage, label: Image, widget: image }
+  - name: schedule
+    label: Event Schedule
+    folder: src/markdown/schedule
+    create: true
+    fields:
+      - { name: path, label: Path, hint: "eg. '/events/my-event'" }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: description, label: Event Description, widget: markdown }
+      - { name: eventDate, label: Event Date, widget: string }
+      - { name: link, label: Link, widget: string }
+      - { name: featuredImage, label: Image, widget: image }
+  - name: carousel
+    label: Carousel
+    folder: src/markdown/carousel
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: image, label: Image, widget: image }
+      - { name: position, label: Position, widget: number}

@@ -139,7 +139,7 @@
 }
 
 #mubc-home__banner > div{
-    background: url("../images/mubc_banner.jpg");
+    background: url("../../static/img/mubc_banner.jpg");
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -203,20 +203,20 @@
 
 
 #mubc-home__virtual-blockchain-conference  {
-     display: block;
+     display: flex;
     overflow-x: scroll;
     white-space: nowrap;
 }
 
-#mubc-home__virtual-blockchain-conference  > img {
-    margin-right: 40px;
-    width: 600px;
-    height: 300px;
-    position: relative;
+#mubc-home__virtual-blockchain-conference > div:first-child > div {
+    margin-left: 150px ;
 }
 
-#mubc-home__virtual-blockchain-conference  > img:first-child  {
-    margin-left: 150px;
+.mubc-home__sessions__carousel__image {
+    margin-right: 40px;
+    position: relative;
+    width: 600px;
+    height: 325px;
 }
 
 #mubc-home__conference-link {
@@ -245,7 +245,7 @@
 #mubc-home__blockchain-conference {
     height: 250px;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/conference_slideshow_1.jpg") no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../static/img/conference_slideshow_1.jpg") no-repeat;
     background-size: cover;
     background-position: center -180px;
     position: relative;
@@ -255,7 +255,7 @@
 #mubc-home__blockathon {
     height: 250px;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/blockathon_banner.jpg") no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../static/img/blockathon_banner.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1588,3 +1588,42 @@
     margin-bottom: 20px;
 }
 
+/* Schedule */
+.schedule__link {
+    color: black;
+}
+
+.schedule__link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/* Schedule Post */
+
+.schedule-post {
+    text-align: left;
+    margin-top: 50px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.schedule-post__title {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.schedule-post__date {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 50%;
+    margin-top: -50px;
+}
+
+.schedule-post__body {
+    text-align: center;
+    margin-top: 50px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
