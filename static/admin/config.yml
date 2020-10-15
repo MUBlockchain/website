@@ -12,7 +12,7 @@ collections:
     folder: src/markdown/blog
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: path, label: Path, hint: "eg. '/blog/my-blog'" }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
@@ -22,7 +22,7 @@ collections:
     folder: src/markdown/schedule
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: path, label: Path, hint: "eg. '/events/my-event'" }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: description, label: Event Description, widget: markdown }
