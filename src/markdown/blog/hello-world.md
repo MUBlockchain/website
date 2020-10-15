@@ -1,8 +1,8 @@
 ---
 path: /post1
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+date: 2015-05-01T22:12:03.284Z
+title: Anything Else
+description: Hello World
 featuredImage: /img/salty_egg.jpg
 ---
 
