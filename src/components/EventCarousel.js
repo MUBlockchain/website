@@ -12,7 +12,7 @@ const EventCarousel = (props) => {
             posts.map(({node: post}) => (
                 <div key={post.id}>
                     <Img className="mubc-home__sessions__carousel__image"
-                         fixed={post.frontmatter.image.childImageSharp.fixed}/>
+                         fluid={{...post.frontmatter.image.childImageSharp.fluid, aspectRatio: 1 }}/>
                 </div>
             ))}
         </div>
@@ -42,8 +42,9 @@ export default () => (
               title
                 image {
           childImageSharp {
-            fixed  {
-      ...GatsbyImageSharpFixed
+            fluid(maxWidth: 600, maxHeight: 325, quality: 100)  {
+      ...GatsbyImageSharpFluid
+      ...GatsbyImageSharpFluidLimitPresentationSize
     }
           }
         }
