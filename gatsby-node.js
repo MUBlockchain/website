@@ -1,24 +1,3 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-exports.onCreatePage = async ({ page, actions }) => {
-    const { createPage, deletePage } = actions
-    // Check if the page is a localized 404
-    if (page.path.match(/^\/[a-z]{2}\/404\/$/)) {
-        const oldPage = { ...page }
-        // Get the language code from the path, and match all paths
-        // starting with this code (apart from other valid paths)
-        const langCode = page.path.split(`/`)[1]
-        page.matchPath = `/${langCode}/*`
-        // Recreate the modified page
-        deletePage(oldPage)
-        createPage(page)
-    }
-}
-
 const path = require(`path`);
 
 exports.createPages = async ({actions, graphql, reporter}) => {
@@ -70,8 +49,11 @@ exports.createPages = async ({actions, graphql, reporter}) => {
     }
 
     blogResult.data.allMarkdownRemark.edges.forEach(({node}) => {
+        let blogPath = node.frontmatter.path
+        let slug = blogPath.substr(0, 1) === '/' ? blogPath : `/${blogPath}`
+        console.log("SLUG: ", slug)
         createPage({
-            path: node.frontmatter.path,
+            path: slug,
             component: blogPostTemplate,
             context: {}, // additional data can be passed via context
         })
