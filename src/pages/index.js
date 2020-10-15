@@ -8,6 +8,7 @@ import MUBCNavbar from "../components/MUBCNavbar"
 import MUBCFooter from "../components/MUBCFooter"
 import MUBCEventRow from "../components/MUBCEventRow";
 import ScheduleRoll from "../components/ScheduleRoll";
+import EventCarousel from "../components/EventCarousel";
 
 
 const IndexPage = () => (
@@ -85,12 +86,7 @@ const IndexPage = () => (
         <div id="mubc-home__sessions">
             <h1>VIRTUAL BLOCKCHAIN CONFERENCE: FEATURED SESSIONS</h1>
             <hr className="divider"/>
-            <div id="mubc-home__virtual-blockchain-conference">
-                <img className="mubc-home__sessions__carousel__image" src={require("../../static/img/slideshow_1.jpg")}/>
-                <img className="mubc-home__sessions__carousel__image" src={require("../../static/img/slideshow_2.jpg")}/>
-                <img className="mubc-home__sessions__carousel__image" src={require("../../static/img/slideshow_3.jpg")}/>
-                <img className="mubc-home__sessions__carousel__image" src={require("../../static/img/slideshow_4.jpg")}/>
-            </div>
+            <EventCarousel />
             <div id="mubc-home__conference-link">
                 <a href="http://virtualblockchain.io/">Visit the Virtual Blockchain Conference Site</a>
             </div>
