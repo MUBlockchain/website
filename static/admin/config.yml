@@ -37,3 +37,14 @@ collections:
       - { name: title, label: Title, widget: string }
       - { name: image, label: Image, widget: image }
       - { name: position, label: Position, widget: number}
+  - name: leadership
+    label: leadeship
+    folder: src/markdown/leadership
+    create: true
+    fields:
+      - { name: name, label: Name, widget: string }
+      - { name: description, label: Description, widget: string }
+      - { name: headshot, label: Headshot, widget: image }
+      - { name: email, label: Email, widget: string }
+      - { name: linkedin, label: LinkedIn, widget: string }
+
