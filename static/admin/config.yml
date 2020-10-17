@@ -38,7 +38,7 @@ collections:
       - { name: image, label: Image, widget: image }
       - { name: position, label: Position, widget: number}
   - name: leadership
-    label: leadeship
+    label: Leadership
     folder: src/markdown/leadership
     create: true
     fields:
