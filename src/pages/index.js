@@ -28,7 +28,7 @@ const IndexPage = () => (
                 <h1>Fall 2020 Schedule</h1>
                 <hr className="divider"/>
                 <h5>Click on a row to view details!</h5>
-                <ScheduleRoll />
+                {/* <ScheduleRoll /> */}
                 <MUBCEventRow 
                     date={'15 SEP'}
                     title={'Info Night #1'}
