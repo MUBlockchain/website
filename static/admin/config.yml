@@ -47,4 +47,5 @@ collections:
       - { name: headshot, label: Headshot, widget: image }
       - { name: email, label: Email, widget: string }
       - { name: linkedin, label: LinkedIn, widget: string }
+      - { name: role, label: Role, widget: string}
 
