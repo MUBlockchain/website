@@ -646,6 +646,14 @@
     image-rendering: crisp-edges;
 }
 
+.leadership-team__headshot {
+    border-radius: 50%;
+    width: 223px;
+    height: 223px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
 .leadership-team__column > p, .leadership-team__strategic-advisors__column > p{
     margin-right: auto;
     margin-left: auto;
