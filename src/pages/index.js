@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import MUBCHeader from "../components/MUBCHeader"
 import MUBCNavbar from "../components/MUBCNavbar"
 import MUBCFooter from "../components/MUBCFooter"
-import MUBCEventRow from "../components/MUBCEventRow";
 import ScheduleRoll from "../components/ScheduleRoll";
 import EventCarousel from "../components/EventCarousel";
 
