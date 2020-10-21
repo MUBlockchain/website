@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: MUBlockchain/website
-  branch: master
+  branch: netlify-leadership
 
 media_folder: static/img
 public_folder: /img
@@ -37,3 +37,16 @@ collections:
       - { name: title, label: Title, widget: string }
       - { name: image, label: Image, widget: image }
       - { name: position, label: Position, widget: number}
+  - name: leadership
+    label: Leadership
+    folder: src/markdown/leadership
+    create: true
+    fields:
+      - { name: relation, label: Relation, widget: string, hint: "eg. 'advisor' or 'leadersip'"}
+      - { name: name, label: Name, widget: string }
+      - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: string }
+      - { name: headshot, label: Headshot, widget: image }
+      - { name: email, label: Email, widget: string }
+      - { name: linkedin, label: LinkedIn, widget: string }
+

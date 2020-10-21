@@ -40,7 +40,7 @@ export default () => (
         query={graphql`
       query ScheduleRollQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] },
+          sort: { order: DESC, fields: [frontmatter___eventDate] },
           filter: {fileAbsolutePath: {regex: "/markdown/schedule/"  }}
         ) {
           edges {

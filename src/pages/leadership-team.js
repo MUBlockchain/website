@@ -4,6 +4,8 @@ import SEO from "../components/seo"
 import MUBCHeader from "../components/MUBCHeader"
 import MUBCNavbar from "../components/MUBCNavbar"
 import MUBCFooter from "../components/MUBCFooter"
+import ExecutiveLeadershipTeam from "../components/leadership-components/ExecutiveLeadershipTeam";
+import StrategicAdvisors from "../components/leadership-components/StrategicAdvisors";
 
 const LeadershipTeam = () => (
   <div>
@@ -12,6 +14,7 @@ const LeadershipTeam = () => (
     <MUBCNavbar />
     <br/>
     <br/>
+    <ExecutiveLeadershipTeam/>
     <h2 id="leadership-team__header">Executive Leadership Team</h2>
     <hr className="divider"/>
     <div className="leadership-team__row">
@@ -224,6 +227,7 @@ const LeadershipTeam = () => (
           <a href="https://www.linkedin.com/in/ashtonbarger/">LinkedIn</a>
         </div>
       </div>
+      <StrategicAdvisors/>
     </div>
     <MUBCFooter />
   </div>

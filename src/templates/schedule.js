@@ -5,7 +5,7 @@ import MUBCNavbar from "../components/MUBCNavbar";
 import Img from "gatsby-image";
 export default function Template({ data }) {
   const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter } = markdownRemark
 
   return (
     <div className="blog-post__container">
