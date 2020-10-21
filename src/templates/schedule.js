@@ -14,7 +14,7 @@ export default function Template({ data }) {
       <div className="schedule-post">
         <div className="schedule-post__header">
           <h1 className="schedule-post__title">{frontmatter.title}</h1>
-          <h2 className="schedule-post__date">Date: {frontmatter.date}</h2>
+          <h2 className="schedule-post__date">Date: {frontmatter.eventDate}</h2>
           <br />
           <br />
         </div>

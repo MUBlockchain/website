@@ -12,7 +12,7 @@ const EventCarousel = (props) => {
             posts.map(({node: post}) => (
                 <div key={post.id}>
                     <Img className="mubc-home__sessions__carousel__image"
-                         fluid={{...post.frontmatter.image.childImageSharp.fluid, aspectRatio: 1 }}/>
+                      fluid={{...post.frontmatter.image.childImageSharp.fluid, aspectRatio: 1 }}/>
                 </div>
             ))}
         </div>
