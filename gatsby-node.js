@@ -50,8 +50,6 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 
     blogResult.data.allMarkdownRemark.edges.forEach(({node}) => {
         let blogPath = node.frontmatter.path
-        let slug = blogPath.substr(0, 1) === '/' ? blogPath : `/${blogPath}`
-        console.log("SLUG: ", slug)
         createPage({
             path: slug,
             component: blogPostTemplate,
