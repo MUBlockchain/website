@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: MUBlockchain/website
-  branch: netlify-leadership
+  branch: brendanbranch-0
 
 media_folder: static/img
 public_folder: /img
