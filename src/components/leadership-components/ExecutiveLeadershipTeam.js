@@ -33,8 +33,8 @@ const ExecutiveLeadershipTeam = (props) => {
                         <p>{posts[i + 2].node.frontmatter.name}</p>
                         <p>{posts[i + 2].node.frontmatter.title}</p>
                         <p>{posts[i + 2].node.frontmatter.description}</p>
-                        <a href={posts[i + 2].node.frontmatter.email}>{posts[i + 2].node.frontmatter.email}</a>
-                        <a href={posts[i + 2].node.frontmatter.linkedin}>LinkedIn</a>
+                        <a href={`mailto:${posts[i + 2].node.frontmatter.email}`}>{posts[i + 2].node.frontmatter.email}</a>
+                        <a href={`https://www.linkedin.com/in/${posts[i + 2].node.frontmatter.linkedin}`}>LinkedIn</a>
                     </div> }
                 </div>
             )

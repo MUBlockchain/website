@@ -26,7 +26,7 @@ const StrategicAdvisors = (props) => {
                         <p>{posts[i + 1].node.frontmatter.title}</p>
                         <p>{posts[i + 1].node.frontmatter.description}</p>
                         <a href={posts[i + 1].node.frontmatter.email}>{posts[i + 1].node.frontmatter.email}</a>
-                        <a href={posts[i + 1].node.frontmatter.linkedin}>LinkedIn</a>
+                        <a href={`https://www.linkedin.com/in/${posts[i + 1].node.frontmatter.linkedin}`}>LinkedIn</a>
                     </div>}
                 </div>
             )
