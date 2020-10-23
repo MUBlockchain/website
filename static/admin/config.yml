@@ -48,5 +48,5 @@ collections:
       - { name: description, label: Description, widget: string }
       - { name: headshot, label: Headshot, widget: image }
       - { name: email, label: Email, widget: string }
-      - { name: linkedin, label: LinkedIn, widget: string }
+      - { name: linkedin, label: LinkedIn, widget: string, hint: "username only- not full link!" }
 
