@@ -1,6 +1,6 @@
 ---
-twitter: https://twitter.com/home
-instagram: https://twitter.com/home
-linkedin: https://twitter.com/home
-youtube: https://twitter.com/home
+twitter: https://twitter.com/mubcblockchain
+instagram: https://www.instagram.com/mublockchainclub/
+linkedin: https://www.linkedin.com/company/mubc/
+youtube: https://www.youtube.com/channel/UC78tQagLk8hqRSsn1zkdySw
 ---
