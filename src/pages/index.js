@@ -1,5 +1,4 @@
 import React from "react"
-import {FaTwitter, FaInstagram, FaYoutube, FaLinkedin} from "react-icons/fa"
 import {Button} from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import SEO from "../components/seo"
@@ -8,6 +7,7 @@ import MUBCNavbar from "../components/MUBCNavbar"
 import MUBCFooter from "../components/MUBCFooter"
 import ScheduleRoll from "../components/ScheduleRoll";
 import EventCarousel from "../components/EventCarousel";
+import SocialLinks from "../components/SocialLinks"
 
 
 const IndexPage = () => (
@@ -88,15 +88,7 @@ const IndexPage = () => (
                 <h1>Socials</h1>
                 <hr className="divider"/>
                 <div>
-                    <a className="mubc-home__media-link" href="https://twitter.com/mubcblockchain"><FaTwitter
-                        className="mubc-home__icon"/></a>
-                    <a className="mubc-home__media-link" href="https://www.instagram.com/mublockchainclub/"><FaInstagram
-                        className="mubc-home__icon"/></a>
-                    <a className="mubc-home__media-link" href="https://www.linkedin.com/company/mubc/"><FaLinkedin
-                        className="mubc-home__icon"/></a>
-                    <a className="mubc-home__media-link"
-                       href="https://www.youtube.com/channel/UC78tQagLk8hqRSsn1zkdySw"><FaYoutube
-                        className="mubc-home__icon"/></a>
+                    <SocialLinks linkClass="mubc-home__media-link" iconClass="mubc-home__icon" />
                 </div>
             </div>
             <div id="mubc-home__contact">

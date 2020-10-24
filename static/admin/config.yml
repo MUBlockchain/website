@@ -49,4 +49,15 @@ collections:
       - { name: headshot, label: Headshot, widget: image }
       - { name: email, label: Email, widget: string }
       - { name: linkedin, label: LinkedIn, widget: string }
+  - name: links
+    label: Links
+    files: 
+      - file: src/markdown/links/sociallinks.md
+        name: sociallinks
+        label: Social Links
+        fields:
+          - {name: twitter, label: Twitter, widget: string}
+          - {name: instagram, label: Instagram, widget: string}
+          - {name: linkedin, label: LinkedIn, widget: string}
+          - {name: youtube, label: Youtube, widget: string}
 
