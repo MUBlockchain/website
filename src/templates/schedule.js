@@ -5,7 +5,8 @@ import MUBCNavbar from "../components/MUBCNavbar";
 import Img from "gatsby-image";
 export default function Template({ data }) {
   const { markdownRemark } = data
-  const { frontmatter } = markdownRemark
+  const { frontmatter, html } = markdownRemark
+  const summit = frontmatter.link === 'https://www.eventbrite.com/e/2020-mubc-blockchain-accounting-summit-tickets-125370164537'
 
   return (
     <div className="blog-post__container">
@@ -25,8 +26,12 @@ export default function Template({ data }) {
           <p>{frontmatter.description}</p>
           <br />
           <br />
+          <div
+              dangerouslySetInnerHTML={{ __html: html }}
+          />
+          <br />
           <h4>Links: </h4>
-          <a href={frontmatter.link}>{frontmatter.link}</a>
+          {!summit ? <a href={frontmatter.link}>{frontmatter.link}</a> : <a className="summit-button" href={frontmatter.link}>Buy Tickets</a>}
         </div>
       </div>
     </div>
