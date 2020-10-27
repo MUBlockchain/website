@@ -31,7 +31,7 @@ export default function Template({ data }) {
           />
           <br />
           <h4>Links: </h4>
-          {!summit ? <a href={frontmatter.link}>{frontmatter.link}</a> : <a className="summit-button" href={frontmatter.link}>Buy Tickets</a>}
+          {!summit ? <a href={frontmatter.link}>{frontmatter.link}</a> : <a className="summit-button" href={frontmatter.link}>Register for the Event</a>}
         </div>
       </div>
     </div>

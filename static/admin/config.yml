@@ -3,6 +3,7 @@ backend:
   repo: MUBlockchain/website
   branch: master
 
+
 media_folder: static/img
 public_folder: /img
 
@@ -49,4 +50,15 @@ collections:
       - { name: headshot, label: Headshot, widget: image }
       - { name: email, label: Email, widget: string }
       - { name: linkedin, label: LinkedIn, widget: string, hint: "username only- not full link!" }
+  - name: links
+    label: Links
+    files: 
+      - file: src/markdown/links/sociallinks.md
+        name: sociallinks
+        label: Social Links
+        fields:
+          - {name: twitter, label: Twitter, widget: string}
+          - {name: instagram, label: Instagram, widget: string}
+          - {name: linkedin, label: LinkedIn, widget: string}
+          - {name: youtube, label: Youtube, widget: string}
 
