@@ -1,5 +1,6 @@
 import React from "react"
 import {Button} from "react-bootstrap"
+import "../components/app.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import SEO from "../components/seo"
 import MUBCHeader from "../components/MUBCHeader"
