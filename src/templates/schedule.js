@@ -19,14 +19,16 @@ export default function Template({ data }) {
           <br />
         </div>
         <div className="schedule-post__body">
-          <Img className="schedule__image" fixed={frontmatter.featuredImage.childImageSharp.fixed} />
+          <Img className="schedule-post__image" fluid={frontmatter.featuredImage.childImageSharp.fluid} />
           <br />
           <br />
           <p>{frontmatter.description}</p>
           <br />
           <br />
+          <div className="schedule-post__links">
           <h4>Links: </h4>
           <a href={frontmatter.link}>{frontmatter.link}</a>
+          </div>
         </div>
       </div>
     </div>
@@ -45,8 +47,8 @@ export const pageQuery = graphql`
         description
         featuredImage {
           childImageSharp {
-            fixed {
-            ...GatsbyImageSharpFixed
+            fluid(maxHeight: 300, quality: 100) {
+            ...GatsbyImageSharpFluid
             }
           }
         }

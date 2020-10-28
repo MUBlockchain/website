@@ -13,10 +13,6 @@ const MUBCNavbar = () => {
                             to="/">Home</Link>
                         <Link activeClassName="navbar__selection__active" className="navbar__selection"
                             to="/leadership-team">Leadership</Link>
-                        <NavDropdown title="Events" className="navbar__selection__dropdown">
-                            <NavDropdown.Item><Link to="/blockathon-2019" activeClassName="navbar__selection__active" className="navbar__selection">2019 Blockathon</Link></NavDropdown.Item>
-                            <NavDropdown.Item><Link to="/conference-2019" activeClassName="navbar__selection__active" className="navbar__selection">2019 Conference</Link></NavDropdown.Item>
-                        </NavDropdown>
                         <Link activeClassName="navbar__selection__active" className="navbar__selection"
                             to="/affiliations">Affiliations</Link>
                         <Link activeClassName="navbar__selection__active" className="navbar__selection"

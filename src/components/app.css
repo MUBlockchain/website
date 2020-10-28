@@ -1606,10 +1606,10 @@
     color: black;
 }
 
+
 /* Schedule Post */
 
 .schedule-post {
-    text-align: left;
     margin-top: 50px;
     width: 75%;
     margin-left: auto;
@@ -1635,3 +1635,41 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.schedule-post__links {
+    text-align: center;
+}
+
+.schedule-post__image {
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 760px) {
+
+    .schedule-post {
+        width: 90%;
+    }
+
+    .schedule-post__header {
+        text-align: center;
+    }
+
+    .schedule-post__title {
+        font-size: 50px;
+    }
+
+    .schedule-post__date {
+        margin-right: 0;
+    }
+
+    .schedule-post__body {
+        width: 95%;
+    }
+
+    .schedule-post__links {
+        font-size: 12px;
+    }
+}
+
