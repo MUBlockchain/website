@@ -29,6 +29,24 @@ description: >-
 
   *We at MUBC know that blockchain presents a clear and present value to our current business ecosystem. COVID-19 demonstrated how fragile our highly globalized economy can be in a frenzy. With the Blockchain Accounting Summit, we aim to demonstrate to our faculty the opportunity to be among the first universities moving to meet demand for blockchain-skilled forensic auditors and compliance managers. Join us on October 29th starting at 500pm ET at [https://mubc.io/events/​blockchain-accounting-summit](https://mubc.io/events/blockchain-accounting-summit)​to participate!*
 eventDate: 29 OCT
-link: https://us02web.zoom.us/j/87819495192?pwd=dDdFNkJ0RFFXQTAxTEh0VmNoWTJOQT09
+link: https://www.eventbrite.com/e/2020-mubc-blockchain-accounting-summit-tickets-125370164537
 featuredImage: /img/panel.png
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
