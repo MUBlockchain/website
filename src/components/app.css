@@ -1673,3 +1673,19 @@
     }
 }
 
+.summit-button {
+    background-color: #c70000;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    font-family: "Source Sans Pro", arial, sans-serif;
+}
+
+.summit-button:hover {
+    text-decoration: none;
+    color: white;
+    opacity: .5;
+}
