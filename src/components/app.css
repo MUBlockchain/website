@@ -1641,8 +1641,7 @@
 }
 
 .schedule-post__image {
-    width: 80% !important;
-    margin: 0 auto;
+    width: 100% !important;
 }
 
 
@@ -1665,7 +1664,7 @@
     }
 
     .schedule-post__body {
-        width: 95%;
+        width: 100%;
     }
 
     .schedule-post__links {
@@ -1688,4 +1687,10 @@
     text-decoration: none;
     color: white;
     opacity: .5;
+}
+
+@media (max-width: 500px) {
+    .schedule-post__image {
+        width: 100% !important;
+    }
 }
