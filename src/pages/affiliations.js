@@ -1,17 +1,14 @@
 import React from "react"
 import SEO from "../components/seo"
-import MUBCNavbar from "../components/MUBCNavbar"
-import MUBCHeader from "../components/MUBCHeader"
-import MUBCFooter from "../components/MUBCFooter"
+import Layout from "../components/layout"
 
 const Affiliations = () => {
   return (
     <div>
-      <SEO title="Affiliations" description="Miami University Blockchain Club affiliates and sponsors"/>
-    <MUBCHeader />
-    <MUBCNavbar/>
+    <Layout>
+    <SEO title="Affiliations" description="Miami University Blockchain Club affiliates and sponsors"/>
     <div id="affiliations">
-      <h2>Our Partners</h2>
+      <h2 id="affiliation__header">Our Partners</h2>
       <div>
         <div>
           <img id="farmer_image" src={require("../../static/img/farmer.png")} alt="Farmer"/>
@@ -46,7 +43,7 @@ const Affiliations = () => {
         </div>
       </div>
     </div>
-      <MUBCFooter />
+    </Layout>
     </div>
   )
 }

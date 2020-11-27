@@ -587,6 +587,15 @@
 }
 
 .leadership__header {
+    font-family: "Fjalla One", arial, sans-serif;
+    font-size: 48px;
+    color: #c70000;
+    font-weight: 500;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#leadership-team__strategic-advisors__header {
     padding-top: 45px;
     text-align: center;
     font-size: 40px;
@@ -720,12 +729,13 @@
     text-align: center;
 }
 
-#affiliations > h2 {
+#affiliation__header {
     font-family: "Fjalla One", arial, sans-serif;
     font-size: 48px;
+    color: #c70000;
     font-weight: 500;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 #affiliations > div {
@@ -1479,11 +1489,11 @@
     text-align: center;
 }
 
-.blog > h2{
+.blog__header{
     font-family: "Fjalla One", arial, sans-serif;
     font-size: 48px;
     font-weight: 500;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 30px;
     color: #c70000;
 }
