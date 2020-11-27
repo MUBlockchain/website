@@ -586,16 +586,7 @@
     margin-right: auto;
 }
 
-#leadership-team__header {
-    font-family: "Fjalla One", arial, sans-serif;
-    font-size: 48px;
-    color: #c70000;
-    font-weight: 500;
-    padding-top: 10px;
-    text-align: center;
-}
-
-#leadership-team__strategic-advisors__header {
+.leadership__header {
     padding-top: 45px;
     text-align: center;
     font-size: 40px;
