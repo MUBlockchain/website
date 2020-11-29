@@ -4,7 +4,7 @@ import { Image } from 'react-bootstrap'
 import ReactMarkdown from 'react-markdown'
 import './preview.css'
 
-const LeadershipPreview = ({ entry }) => {
+const LeadershipPreview = ({ entry, getAsset }) => {
     const title = entry.getIn(['data', 'title']) ? entry.getIn(['data', 'title']) : 'Title'
     const description = entry.getIn(['data', 'description']) ? entry.getIn(['data', 'description']) : 'The description will go here'
     const image = entry.getIn(['data', 'headshot'])
@@ -13,7 +13,7 @@ const LeadershipPreview = ({ entry }) => {
     const linkedin = entry.getIn(['data', 'linkedin'])
     return (
         <div className="team-member">
-            <img className="team-member__headshot" src={image ? image : require('../../static/img/bitconnect.png')} alt="Headshot" />
+            <img className="team-member__headshot" src={image ? getAsset(image) : require('../../static/img/bitconnect.png')} alt="Headshot" />
             <p className="team-member__name">{name}</p>
             <h1 className="team-member__title">{title}</h1>
             <p className="team-member__description">{description}</p>
@@ -46,19 +46,18 @@ const BlogPreview = ({ entry, widgetFor }) => {
     )
 }
 
-const SchedulePreview = ({entry, widgetFor}) => {
+const SchedulePreview = ({ entry, getAsset }) => {
     const title = entry.getIn(['data', 'title']) ? entry.getIn(['data', 'title']) : 'Title'
     const date = entry.getIn(['data', 'eventDate']) ? `Date: ${entry.getIn(['data', 'eventDate'])}` : 'Date'
     const description = entry.getIn(['data', 'description']) ? entry.getIn(['data', 'description']) : 'Description'
     const link = entry.getIn(['data', 'link']) ? entry.getIn(['data', 'link']) : 'Fake Link'
     const image = entry.getIn(['data', 'featuredImage'])
-    console.log(image)
     return (
         <div className="schedule">
             <h1 className="schedule__title">{title}</h1>
             <h2 className="schedule__date">{date}</h2>
             <div className ="schedule__body">
-                {image && <img className="schedule__image" src={image} alt="Event Image"/>}
+                {image && <img className="schedule__image" src={getAsset(image)} alt="Event Image"/>}
                 <p className="schedule__description">{description}</p>
                 <h4>Link: </h4><a href={link}>{link}</a>
             </div>
