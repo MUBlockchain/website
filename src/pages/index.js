@@ -1,22 +1,17 @@
 import React from "react"
 import {Button} from "react-bootstrap"
-import "../components/app.css"
 import "bootstrap/dist/css/bootstrap.min.css"
-import "../components/app.css"
 import SEO from "../components/seo"
-import MUBCHeader from "../components/MUBCHeader"
-import MUBCNavbar from "../components/MUBCNavbar"
-import MUBCFooter from "../components/MUBCFooter"
 import ScheduleRoll from "../components/ScheduleRoll";
 import EventCarousel from "../components/EventCarousel";
 import SocialLinks from "../components/SocialLinks"
+import Layout from "../components/layout"
 
 
 const IndexPage = () => (
     <div>
+        <Layout>
         <SEO title="Home" description="Miami University Blockchain Club home page"/>
-        <MUBCHeader/>
-        <MUBCNavbar/>
         <div id="mubc-home__banner">
             <div>
                 <div>
@@ -129,7 +124,7 @@ const IndexPage = () => (
                 ></iframe>
             </div>
         </div>
-        <MUBCFooter/>
+        </Layout>
     </div>
 )
 

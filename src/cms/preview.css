@@ -1,0 +1,122 @@
+
+/* Leadership Preview */
+
+.team-member {
+    text-align: center;
+    width: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.team-member__headshot {
+    border-radius: 50%;
+    width: 223px;
+    height: 223px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.team-member__name {
+    font-size: 22px;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+}
+
+.team-member__title {
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+    opacity: 80%;
+}
+
+.team-member__description {
+    color: rgb(94, 94, 94);
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.team-member__email {
+    color: rgb(199, 0, 0);
+    text-decoration: underline;
+}
+
+.team-member__linkedin {
+    text-transform: uppercase;
+    background: #c70000;
+    color: white;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    display: block;
+    width: 30%;
+    border-radius: 5px;
+    padding: 12px 15px;
+    font-size: 12px;
+    margin-top: 30px;
+    margin-left: 32%;
+}
+
+/* Blog */
+
+.blog__title {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.blog__date {
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 50%;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.blog__body {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.blog__body > p > img {
+    margin-top: 40px;
+    max-height: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Schedule */
+
+.schedule__title {
+font-size: 65px;
+font-weight: 600;
+}
+
+.schedule__date {
+    margin-left: 50%;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.schedule__body {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.schedule__body > img {
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.schedule__body > p {
+    margin-bottom: 50px;
+}
+
+.schedule__body > ph4 {
+    margin-bottom: -20px;
+}

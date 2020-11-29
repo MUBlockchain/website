@@ -1,8 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import MUBCHeader from "../components/MUBCHeader";
-import MUBCNavbar from "../components/MUBCNavbar";
 import Img from "gatsby-image";
+import Layout from "../components/layout";
 export default function Template({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
@@ -10,8 +9,7 @@ export default function Template({ data }) {
 
   return (
     <div className="blog-post__container">
-      <MUBCHeader />
-      <MUBCNavbar />
+      <Layout>
       <div className="schedule-post">
         <div className="schedule-post__header">
           <h1 className="schedule-post__title">{frontmatter.title}</h1>
@@ -32,6 +30,7 @@ export default function Template({ data }) {
           {!summit && <><h4>Links: </h4><a href={frontmatter.link}>{frontmatter.link}</a></>}
         </div>
       </div>
+      </Layout>
     </div>
   )
 }

@@ -11,12 +11,25 @@ const MUBCNavbar = () => {
                     <Nav className="mr-auto" id="nav">
                         <Link activeClassName="navbar__selection__active" className="navbar__selection"
                             to="/">Home</Link>
-                        <Link activeClassName="navbar__selection__active" className="navbar__selection"
-                            to="/leadership-team">Leadership</Link>
+                        <NavDropdown title="Leadership" className="navbar__selection__dropdown">
+                            <NavDropdown.Item>
+                                <Link activeClassName="navbar__selection__active" className="navbar__selection"
+                                    to="/leadership-team">
+                                    Executive Leadership</Link>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <Link activeClassName="navbar__selection__active" className="navbar__selection"
+                                    to="/development-team">Development Team</Link>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <Link activeClassName="navbar__selection__active" className="navbar__selection"
+                                    to="/strategic-advisors">Strategic Advisors</Link>
+                            </NavDropdown.Item>
+                        </NavDropdown>
                         <Link activeClassName="navbar__selection__active" className="navbar__selection"
                             to="/affiliations">Affiliations</Link>
                         <Link activeClassName="navbar__selection__active" className="navbar__selection"
-                              to="/blog">Blog</Link>
+                            to="/blog">Blog</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
