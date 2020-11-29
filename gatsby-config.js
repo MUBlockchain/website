@@ -38,7 +38,12 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms/netlify.js`
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -48,7 +53,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/img/MUBC Logo Big Letters (vector) copy 2.png`
+        icon: `static/img/MUBC Logo Big Letters (vector) copy 2.png`,
       }
     }
   ],
