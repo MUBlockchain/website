@@ -1,6 +1,5 @@
 import CMS from 'netlify-cms-app'
 import React from 'react'
-import { Image } from 'react-bootstrap'
 import ReactMarkdown from 'react-markdown'
 import './preview.css'
 
@@ -24,7 +23,7 @@ const LeadershipPreview = ({ entry, getAsset }) => {
     )
 }
 
-const BlogPreview = ({ entry, widgetFor }) => {
+const BlogPreview = ({ entry, widgetsFor }) => {
     const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ]
@@ -36,12 +35,12 @@ const BlogPreview = ({ entry, widgetFor }) => {
         const year = date.getFullYear()
         date = `${month} ${day}, ${year}`
     }
-    const html = widgetFor('body') ? widgetFor('body').props.value : null
+    const html = widgetsFor('body') ? widgetsFor('body') : null
     return (
         <div className="blog">
             <h1 className="blog__title">{title}</h1>
             <h2 className="blog__date">{date}</h2>
-            <ReactMarkdown className="blog__body" children={html} allowDangerousHtml/>
+            <ReactMarkdown className="blog__body" children={html} allowDangerousHtml />
         </div>
     )
 }
@@ -56,8 +55,8 @@ const SchedulePreview = ({ entry, getAsset }) => {
         <div className="schedule">
             <h1 className="schedule__title">{title}</h1>
             <h2 className="schedule__date">{date}</h2>
-            <div className ="schedule__body">
-                {image && <img className="schedule__image" src={getAsset(image)} alt="Event Image"/>}
+            <div className="schedule__body">
+                {image && <img className="schedule__image" src={getAsset(image)} alt="Event Image" />}
                 <p className="schedule__description">{description}</p>
                 <h4>Link: </h4><a href={link}>{link}</a>
             </div>
