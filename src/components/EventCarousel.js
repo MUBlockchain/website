@@ -2,19 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {graphql, StaticQuery} from 'gatsby'
 import Img from 'gatsby-image'
+import { Carousel } from 'react-bootstrap'
 
 const EventCarousel = (props) => {
     const {data} = props
     const {edges: posts} = data.allMarkdownRemark
     return (
         <div id="mubc-home__virtual-blockchain-conference">
-            {posts &&
-            posts.map(({node: post}) => (
-                <div key={post.id}>
-                    <Img className="mubc-home__sessions__carousel__image"
-                      fluid={{...post.frontmatter.image.childImageSharp.fluid, aspectRatio: 1 }}/>
-                </div>
-            ))}
+          <div>
+            <Carousel>
+                {posts && posts.map(({node: post}) => (
+                  <Carousel.Item interval={7000}>
+                    <div key={post.id}>  
+                      <Img  className="mubc-home__sessions__carousel__image" 
+                       fluid={{...post.frontmatter.image.childImageSharp.fluid, aspectRatio: 1 }}/>     
+                    </div>
+                  </Carousel.Item>
+                ))}
+            </Carousel>
+          </div>
         </div>
     )
 }

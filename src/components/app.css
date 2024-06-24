@@ -203,19 +203,18 @@
 
 
 #mubc-home__virtual-blockchain-conference  {
-     display: flex;
+    display: flex;
     overflow-x: scroll;
     white-space: nowrap;
 }
 
 #mubc-home__virtual-blockchain-conference > div:first-child > div {
-    margin-left: 150px ;
+    margin-left: 420px; 
 }
 
 .mubc-home__sessions__carousel__image {
-    margin-right: 40px;
     position: relative;
-    width: 600px;
+    width: 600px; 
     height: 325px;
 }
 

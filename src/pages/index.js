@@ -35,6 +35,7 @@ const IndexPage = () => (
             <h1>VIRTUAL BLOCKCHAIN CONFERENCE: FEATURED SESSIONS</h1>
             <hr className="divider"/>
             <EventCarousel />
+            <hr className="divider"/>
             <div id="mubc-home__conference-link">
                 <a href="http://virtualblockchain.io/">Visit the Virtual Blockchain Conference Site</a>
             </div>
